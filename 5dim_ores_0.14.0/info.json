@@ -1,0 +1,12 @@
+
+{
+  "name": "5dim_ores",
+  "version": "0.14.0",
+  "factorio_version": "0.14",
+  "title": "5dim's Mod - Ores",
+  "author": "5Dim",
+  "contact": "mcguten.videos@gmail.com",
+  "homepage": "http://www.5dim.es",
+  "description": "Ores for 5dim's mod",
+  "dependencies": ["5dim_core >= 0.14.0", "boblibrary >= 0.13.1"]
+}

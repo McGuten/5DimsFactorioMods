@@ -1,0 +1,12 @@
+
+{
+  "name": "5dim_logistic",
+  "version": "0.14.1",
+  "factorio_version": "0.14",
+  "title": "5dim's Mod - Logistic",
+  "author": "5Dim",
+  "contact": "mcguten.videos@gmail.com",
+  "homepage": "http://www.5dim.es",
+  "description": "logistic of all 5dim's mod",
+  "dependencies": ["5dim_core >= 0.14.0"]
+}

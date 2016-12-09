@@ -1,0 +1,15 @@
+require("config")
+--Changes
+require("prototypes.changes")
+--Pumpjack
+require("prototypes.pump-2")
+require("prototypes.pump-3")
+--Mining
+require("prototypes.mining-range-1")
+require("prototypes.mining-range-2")
+require("prototypes.mining-range-3")
+require("prototypes.mining-speed-1")
+require("prototypes.mining-speed-2")
+require("prototypes.mining-speed-3")
+--Technology
+require("prototypes.tech")

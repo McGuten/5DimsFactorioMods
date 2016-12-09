@@ -1,0 +1,6 @@
+data.raw.item["stone-furnace"].subgroup = "furnace-coal"
+data.raw.item["stone-furnace"].order = "a"
+data.raw.item["steel-furnace"].subgroup = "furnace-coal"
+data.raw.item["steel-furnace"].order = "b"
+data.raw.item["electric-furnace"].subgroup = "furnace-electric"
+data.raw.item["electric-furnace"].order = "a"
