@@ -1,0 +1,1 @@
+data.raw.item["storage-tank"].fast_replaceable_group = "storage-tank"

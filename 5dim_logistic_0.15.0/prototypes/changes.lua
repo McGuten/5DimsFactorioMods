@@ -1,0 +1,1 @@
+data.raw.item["roboport"].fast_replaceable_group = "roboport";
