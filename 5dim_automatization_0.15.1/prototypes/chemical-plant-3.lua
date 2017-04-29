@@ -2,38 +2,38 @@ data:extend({
 -- Item
   {
     type = "item",
-    name = "5d-chemical-plant-2",
-    icon = "__5dim_automatization__/graphics/icon/chemical-plant_2_.png",
+    name = "5d-chemical-plant-3",
+    icon = "__5dim_automatization__/graphics/icon/chemical-plant_3_.png",
     flags = {"goes-to-quickbar"},
     subgroup = "liquid-plant",
-    order = "b",
-    place_result = "5d-chemical-plant-2",
+    order = "c",
+    place_result = "5d-chemical-plant-3",
     stack_size = 10
   },
 
 --Recipe
   {
     type = "recipe",
-    name = "5d-chemical-plant-2",
+    name = "5d-chemical-plant-3",
     energy_required = 8,
     enabled = false,
     ingredients =
     {
-      {"steel-plate", 20},
+      {"copper-plate", 50},
       {"iron-plate", 50},
-      {"chemical-plant", 1},
+      {"5d-chemical-plant-2", 1},
       {"pipe", 10}
     },
-    result= "5d-chemical-plant-2"
+    result= "5d-chemical-plant-3"
   },
 
 --Entity
   {
     type = "assembling-machine",
-    name = "5d-chemical-plant-2",
-    icon = "__5dim_automatization__/graphics/icon/chemical-plant_2_.png",
+    name = "5d-chemical-plant-3",
+    icon = "__5dim_automatization__/graphics/icon/chemical-plant_3_.png",
     flags = {"placeable-neutral","placeable-player", "player-creation"},
-    minable = {hardness = 0.2, mining_time = 0.5, result = "5d-chemical-plant-2"},
+    minable = {hardness = 0.2, mining_time = 0.5, result = "5d-chemical-plant-3"},
     max_health = 300,
     corpse = "big-remnants",
     dying_explosion = "medium-explosion",
@@ -42,7 +42,7 @@ data:extend({
 	  fast_replaceable_group = "chemical-plant",
     module_specification =
     {
-      module_slots = 3
+      module_slots = 4
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
 
@@ -206,7 +206,7 @@ data:extend({
       idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
       apparent_volume = 1.5,
     },
-    crafting_speed = 1.25,
+    crafting_speed = 3.75,
     energy_source =
     {
       type = "electric",

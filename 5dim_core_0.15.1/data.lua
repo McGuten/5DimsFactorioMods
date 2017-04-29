@@ -1,12 +1,5 @@
-require("config")
 --Item
 require("prototypes.timecraftchanges")
-if stackchanges == true then
-require("prototypes.stackchanges")
-end
-if inventorychanges == true then
-require("prototypes.playerchanges")
-end
 --Item group
 require("prototypes.item-groups-automatization")
 require("prototypes.item-group-changes")
