@@ -1,1 +1,0 @@
-data.raw.item["steam-engine"].fast_replaceable_group = "steam-engine";
