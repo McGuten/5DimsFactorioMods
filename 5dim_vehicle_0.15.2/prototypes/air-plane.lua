@@ -183,7 +183,7 @@ data:extend({
     open_sound = { filename = "__base__/sound/car-door-open.ogg", volume=0.7 },
     close_sound = { filename = "__base__/sound/car-door-close.ogg", volume = 0.7 },
     rotation_speed = 0.08,
-    weight = 35000,
+    weight = 3500,
     inventory_size = 80
   },
 })
