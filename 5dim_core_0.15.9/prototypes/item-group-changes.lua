@@ -233,10 +233,14 @@ for _,fluid in pairs(data.raw.fluid) do
 	local barrel = fluid.name .. "-barrel"
 	local fill = "fill-" .. fluid.name .. "-barrel"
 	local empty = "empty-" .. fluid.name .. "-barrel"
-	if fluid.name ~= "steam" then
-		data.raw.item[barrel].subgroup = "liquid-item"
-		data.raw.recipe[fill].subgroup = "liquid-fill"
-		data.raw.recipe[empty].subgroup = "liquid-empty"
+	if data.raw.item[barrel] then
+  		data.raw.item[barrel].subgroup = "liquid-item"
+	end
+	if data.raw.recipe[fill] then
+	  	data.raw.recipe[fill].subgroup = "liquid-fill"
+	end
+	if data.raw.recipe[empty] then
+	  	data.raw.recipe[empty].subgroup = "liquid-empty"
 	end
 end
 
