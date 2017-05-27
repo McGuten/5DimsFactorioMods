@@ -2,36 +2,36 @@ data:extend({
 -- Item
   {
     type = "item",
-    name = "5d-pipe-to-ground-mk1-30",
-    icon = "__5dim_transport__/graphics/icon/pipe/icon_5d_pipe-to-underground_1_30_.png",
+    name = "5d-pipe-to-ground-mk1-50",
+    icon = "__5dim_transport__/graphics/icon/pipe/icon_5d_pipe-to-underground_1_50_.png",
     flags = {"goes-to-quickbar"},
-    subgroup = "transport-pipe-ground-30",
+    subgroup = "transport-pipe-ground-50",
     order = "a[basic-pipe-ground]",
-    place_result = "5d-pipe-to-ground-mk1-30",
+    place_result = "5d-pipe-to-ground-mk1-50",
     stack_size = 50
   },
 
 --Recipe
   {
     type = "recipe",
-    name = "5d-pipe-to-ground-mk1-30",
+    name = "5d-pipe-to-ground-mk1-50",
     enabled = "false",
     ingredients =
     {
-      {"pipe", 30},
+      {"pipe", 50},
       {"iron-plate", 5},
     },
     result_count = 2,
-    result = "5d-pipe-to-ground-mk1-30"
+    result = "5d-pipe-to-ground-mk1-50"
   },
 
 --Entity
   {
     type = "pipe-to-ground",
-    name = "5d-pipe-to-ground-mk1-30",
+    name = "5d-pipe-to-ground-mk1-50",
     icon = "__base__/graphics/icons/pipe-to-ground.png",
     flags = {"placeable-neutral", "player-creation"},
-    minable = {hardness = 0.2, mining_time = 0.5, result = "5d-pipe-to-ground-mk1-30"},
+    minable = {hardness = 0.2, mining_time = 0.5, result = "5d-pipe-to-ground-mk1-50"},
     max_health = 50,
     corpse = "small-remnants",
     resistances =
@@ -55,7 +55,7 @@ data:extend({
         { position = {0, -1} },
         {
           position = {0, 1},
-          max_underground_distance = 30
+          max_underground_distance = 50
         }
       },
     },
@@ -67,35 +67,68 @@ data:extend({
       height = 64,
       scale = 0.5
     },
+    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     pictures =
     {
       up =
       {
         filename = "__base__/graphics/entity/pipe-to-ground/pipe-to-ground-up.png",
         priority = "high",
-        width = 44,
-        height = 32 --, shift = {0.10, -0.04}
+        width = 64,
+        height = 64, --, shift = {0.10, -0.04}
+        hr_version =
+        {
+           filename = "__base__/graphics/entity/pipe-to-ground/hr-pipe-to-ground-up.png",
+           priority = "extra-high",
+           width = 128,
+           height = 128,
+           scale = 0.5
+        }
       },
       down =
       {
         filename = "__base__/graphics/entity/pipe-to-ground/pipe-to-ground-down.png",
         priority = "high",
-        width = 40,
-        height = 32 --, shift = {0.05, 0}
+        width = 64,
+        height = 64, --, shift = {0.05, 0}
+        hr_version =
+        {
+           filename = "__base__/graphics/entity/pipe-to-ground/hr-pipe-to-ground-down.png",
+           priority = "extra-high",
+           width = 128,
+           height = 128,
+           scale = 0.5
+        }
       },
       left =
       {
         filename = "__base__/graphics/entity/pipe-to-ground/pipe-to-ground-left.png",
         priority = "high",
-        width = 32,
-        height = 42 --, shift = {-0.12, 0.1}
+        width = 64,
+        height = 64, --, shift = {-0.12, 0.1}
+        hr_version =
+        {
+           filename = "__base__/graphics/entity/pipe-to-ground/hr-pipe-to-ground-left.png",
+           priority = "extra-high",
+           width = 128,
+           height = 128,
+           scale = 0.5
+        }
       },
       right =
       {
         filename = "__base__/graphics/entity/pipe-to-ground/pipe-to-ground-right.png",
         priority = "high",
-        width = 32,
-        height = 40 --, shift = {0.1, 0.1}
+        width = 64,
+        height = 64, --, shift = {0.1, 0.1}
+        hr_version =
+        {
+           filename = "__base__/graphics/entity/pipe-to-ground/hr-pipe-to-ground-right.png",
+           priority = "extra-high",
+           width = 128,
+           height = 128,
+           scale = 0.5
+        }
       },
     }
   },

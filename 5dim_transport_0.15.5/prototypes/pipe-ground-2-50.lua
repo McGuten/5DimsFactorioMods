@@ -71,28 +71,28 @@ data:extend({
     {
       up =
       {
-        filename = "__base__/graphics/entity/pipe-to-ground/pipe-to-ground-up.png",
+        filename = "__5dim_transport__/graphics/icon/pipe/icon_5d_pipe-to-ground-up_2.png",
         priority = "high",
         width = 44,
         height = 32 --, shift = {0.10, -0.04}
       },
       down =
       {
-        filename = "__base__/graphics/entity/pipe-to-ground/pipe-to-ground-down.png",
+        filename = "__5dim_transport__/graphics/icon/pipe/icon_5d_pipe-to-ground-down_2.png",
         priority = "high",
         width = 40,
         height = 32 --, shift = {0.05, 0}
       },
       left =
       {
-        filename = "__base__/graphics/entity/pipe-to-ground/pipe-to-ground-left.png",
+        filename = "__5dim_transport__/graphics/icon/pipe/icon_5d_pipe-to-ground-left_2.png",
         priority = "high",
         width = 32,
         height = 42 --, shift = {-0.12, 0.1}
       },
       right =
       {
-        filename = "__base__/graphics/entity/pipe-to-ground/pipe-to-ground-right.png",
+        filename = "__5dim_transport__/graphics/icon/pipe/icon_5d_pipe-to-ground-right_2.png",
         priority = "high",
         width = 32,
         height = 40 --, shift = {0.1, 0.1}

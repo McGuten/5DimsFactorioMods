@@ -33,14 +33,20 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "nuclear-recipe",
+    name = "nuclear-pipe",
     group = "nuclear",
     order = "e"
   },
   {
     type = "item-subgroup",
-    name = "nuclear-item",
+    name = "nuclear-recipe",
     group = "nuclear",
     order = "f"
+  },
+  {
+    type = "item-subgroup",
+    name = "nuclear-item",
+    group = "nuclear",
+    order = "g"
   },
 })

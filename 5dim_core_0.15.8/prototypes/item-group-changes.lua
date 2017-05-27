@@ -387,6 +387,8 @@ data.raw.item["heat-exchanger"].subgroup = "nuclear-heat"
 data.raw.item["heat-exchanger"].order = "a"
 data.raw.item["nuclear-reactor"].subgroup = "nuclear-reactor"
 data.raw.item["nuclear-reactor"].order = "a"
+data.raw.item["heat-pipe"].subgroup = "nuclear-pipe"
+data.raw.item["heat-pipe"].order = "a"
 data.raw.item["centrifuge"].subgroup = "nuclear-centri"
 data.raw.item["centrifuge"].order = "a"
 data.raw.item["uranium-fuel-cell"].subgroup = "nuclear-item"
@@ -432,8 +434,6 @@ data.raw.item["iron-chest"].subgroup = "store-solid"
 data.raw.item["iron-chest"].order = "b"
 data.raw.item["steel-chest"].subgroup = "store-solid"
 data.raw.item["steel-chest"].order = "c"
-data.raw.item["heat-pipe"].subgroup = "transport-pipe"
-data.raw.item["heat-pipe"].order = "d"
 
 
 --Vehicles
