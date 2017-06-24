@@ -37,7 +37,7 @@ data:extend({
     collision_box = {{-1.7, -1.7}, {1.7, 1.7}},
     selection_box = {{-2, -2}, {2, 2}},
     dying_explosion = "medium-explosion",
-    --fast_replaceable_group = "roboport",
+    fast_replaceable_group = "roboport",
     energy_source =
     {
       type = "electric",

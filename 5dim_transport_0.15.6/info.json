@@ -1,0 +1,11 @@
+{
+    "name": "5dim_transport",
+    "version": "0.15.6",
+    "factorio_version": "0.15",
+    "title": "5dim's Mod - Transport",
+    "author": "5Dim",
+    "contact": "mcguten.videos@gmail.com",
+    "homepage": "https://mods.factorio.com/mods",
+    "description": "Transport for 5dim's mod",
+    "dependencies": ["5dim_core >= 0.15.2"]
+}

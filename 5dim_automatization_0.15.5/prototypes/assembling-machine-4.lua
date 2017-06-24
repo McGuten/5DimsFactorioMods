@@ -30,7 +30,7 @@ data:extend({
 --Entity
   {
     type = "assembling-machine",
-    name = "5d-assembling-machine-4",
+      name = "5d-assembling-machine-4",
     icon = "__5dim_automatization__/graphics/icon/icon_5d_assembling-machine_4_.png",
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "5d-assembling-machine-4"},

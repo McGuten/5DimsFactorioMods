@@ -55,18 +55,8 @@ data:extend(
     -- in ticks per 1 pu
     pollution_absorbtion_absolute = 20,
     pollution_absorbtion_proportional = 0.01,
-    pollution_to_enhance_spawning = 30000,
     corpse = "biter-spawner-corpse",
     dying_explosion = "blood-explosion-huge",
-    --loot =
-    --{
-    --  {
-    --    count_max = 10,
-    --    count_min = 2,
-    --    item = "alien-artifact",
-    --    probability = 1
-    --  }
-    --},
     max_count_of_owned_units = 7,
     max_friends_around_to_spawn = 5,
     animations =

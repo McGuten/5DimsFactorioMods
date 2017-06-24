@@ -56,15 +56,6 @@ data:extend(
     pollution_absorbtion_proportional = 0.01,
     corpse = "spitter-spawner-corpse",
     dying_explosion = "blood-explosion-huge",
-    --loot =
-    --{
-    --  {
-    --    count_max = 10,
-    --    count_min = 2,
-    --    item = "alien-artifact",
-    --    probability = 1
-    --  }
-    --},
     max_count_of_owned_units = 7,
     max_friends_around_to_spawn = 5,
     animations =

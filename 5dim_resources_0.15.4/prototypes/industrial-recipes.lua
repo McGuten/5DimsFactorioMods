@@ -60,4 +60,19 @@ data:extend({
 		result = "copper-plate",
 		result_count = 100,
 	},
+	{
+		type = "recipe",
+		name = "5d-steel-plate-industrial",
+		icon = "__base__/graphics/icons/steel-plate.png",
+		subgroup = "plates-plates3",
+		order = "bc",
+		category = "industrial-furnace",
+		energy_required = 250,
+		ingredients =
+		{
+			{ "iron-plate", 80},
+		},
+		result = "steel-plate",
+		result_count = 20,
+	},
 })

@@ -1,12 +1,12 @@
 
 {
-  "name": "5dim_logistic",
-  "version": "0.15.1",
+  "name": "5dim_resources",
+  "version": "0.15.4",
   "factorio_version": "0.15",
-  "title": "5dim's Mod - Logistic",
+  "title": "5dim's Mod - Resources",
   "author": "5Dim",
   "contact": "mcguten.videos@gmail.com",
   "homepage": "https://mods.factorio.com/mods",
-  "description": "logistic of all 5dim's mod",
+  "description": "Resources for 5dim's mod",
   "dependencies": ["5dim_core >= 0.15.2"]
 }
