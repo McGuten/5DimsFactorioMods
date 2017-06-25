@@ -1,8 +1,0 @@
-data.raw.item["loader"].subgroup = "transport-loader"
-data.raw.item["loader"].order = "a"
-data.raw.item["fast-loader"].subgroup = "transport-loader"
-data.raw.item["fast-loader"].order = "b"
-data.raw.item["express-loader"].subgroup = "transport-loader"
-data.raw.item["express-loader"].order = "c"
-data.raw.item["chemical-plant"].fast_replaceable_group = "chemical-plant"
-data.raw.item["oil-refinery"].fast_replaceable_group = "oil-refinery"
