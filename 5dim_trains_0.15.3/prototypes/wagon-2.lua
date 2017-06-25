@@ -3,7 +3,7 @@ data:extend({
     {
         type = "item-with-entity-data", 
         name = "5d-cargo-wagon-2", 
-        icon = "__base__/graphics/icons/cargo-wagon.png", 
+        icon = "__5dim_trains__/graphics/cargo-wagon2.png", 
         flags = {"goes-to-quickbar"}, 
         subgroup = "trains-wagons", 
         order = "b", 
@@ -27,7 +27,7 @@ data:extend({
     {
         type = "cargo-wagon", 
         name = "5d-cargo-wagon-2", 
-        icon = "__base__/graphics/icons/cargo-wagon.png", 
+        icon = "__5dim_trains__/graphics/cargo-wagon2.png", 
         flags = {"placeable-neutral", "player-creation", "placeable-off-grid", "not-on-map"}, 
         inventory_size = 80, 
         minable = {mining_time = 1, result = "5d-cargo-wagon-2"}, 
@@ -315,7 +315,7 @@ data:extend({
                         width = 58, 
                         height = 44, 
                         frame_count = 8, 
-                        shift = util.by_pixel(0, 62.5),        -- 241),--62.5+178.5),
+                        shift = util.by_pixel(0, 62.5),         -- 241),--62.5+178.5),
                         scale = 0.5
                                         }
                                 }, 

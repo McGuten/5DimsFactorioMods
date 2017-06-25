@@ -3,7 +3,7 @@ data:extend({
     {
         type = "item-with-entity-data", 
         name = "5d-locomotive-reinforced", 
-        icon = "__base__/graphics/icons/diesel-locomotive.png", 
+        icon = "__5dim_trains__/graphics/diesel-locomotive3.png", 
         flags = {"goes-to-quickbar"}, 
         subgroup = "trains-locomotive", 
         order = "c", 
@@ -28,7 +28,7 @@ data:extend({
     {
         type = "locomotive", 
         name = "5d-locomotive-reinforced", 
-        icon = "__base__/graphics/icons/diesel-locomotive.png", 
+        icon = "__5dim_trains__/graphics/diesel-locomotive3.png", 
         flags = {"placeable-neutral", "player-creation", "placeable-off-grid", "not-on-map"}, 
         minable = {mining_time = 1, result = "5d-locomotive-reinforced"}, 
         mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"}, 
@@ -45,7 +45,7 @@ data:extend({
         braking_force = 10, 
         friction_force = 0.50, 
         vertical_selection_shift = - 0.5, 
-        air_resistance = 0.0075,                         -- this is a percentage of current speed that will be subtracted
+        air_resistance = 0.0075,                          -- this is a percentage of current speed that will be subtracted
         connection_distance = 3, 
         joint_distance = 4, 
         energy_per_hit_point = 5, 

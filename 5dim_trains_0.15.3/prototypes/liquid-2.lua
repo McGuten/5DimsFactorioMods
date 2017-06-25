@@ -3,7 +3,7 @@ data:extend({
     {
         type = "item-with-entity-data", 
         name = "5d-fluid-wagon-2", 
-        icon = "__base__/graphics/icons/fluid-wagon.png", 
+        icon = "__5dim_trains__/graphics/fluid-wagon2.png", 
         flags = {"goes-to-quickbar"}, 
         subgroup = "trains-liquids", 
         order = "b", 
@@ -29,7 +29,7 @@ data:extend({
     {
         type = "fluid-wagon", 
         name = "5d-fluid-wagon-2", 
-        icon = "__base__/graphics/icons/fluid-wagon.png", 
+        icon = "__5dim_trains__/graphics/fluid-wagon2.png", 
         flags = {"placeable-neutral", "player-creation", "placeable-off-grid", "not-on-map"}, 
         minable = {mining_time = 1, result = "5d-fluid-wagon-2"}, 
         mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"}, 
