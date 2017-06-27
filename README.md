@@ -1,4 +1,5 @@
-![logo](logo.png) ## **5Dim's mod**
+![logo](logo.png)
+## **5Dim's mod**
 
 **Global links**
 - [Patreon](https://www.patreon.com/5Dim)
