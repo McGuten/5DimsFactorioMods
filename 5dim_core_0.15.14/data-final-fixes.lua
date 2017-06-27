@@ -56,20 +56,10 @@ require("prototypes.item-group-changes")
 			data.raw["player"]["player"].mining_speed = settings.startup["5d-mining-speed"].value
 		end
 
-	--Crafting speed
-		if settings.startup["5d-crafting-speed"] then
-			for _,item in pairs(data.raw.recipe) do
-				if item.energy_required == nil or item.energy_required == 0 then item.energy_required = 1 end
-				item.energy_required = item.energy_required / settings.startup["5d-crafting-speed"].value
-			end
-		end
-
 	--Mining range
 		if settings.startup["5d-long-mine"] then
 			data.raw["player"]["player"].reach_resource_distance = settings.startup["5d-long-mine"].value
 		end
-
-
 
 -- Harded game
 	-- Enemies spawner health
