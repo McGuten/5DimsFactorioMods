@@ -12,6 +12,12 @@ if settings.startup["5d-suicide"].value then
     require("prototypes.explosive")
 end
 require("prototypes.laser")
+if settings.startup["5d-swimmer"].value then
+    require("prototypes.swimmer")
+end
+if settings.startup["5d-climber"].value then
+    require("prototypes.climber")
+end
 require("prototypes.physical")
 
 --Spiters

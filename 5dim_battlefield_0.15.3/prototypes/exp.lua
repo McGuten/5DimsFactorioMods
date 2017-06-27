@@ -75,6 +75,8 @@ data:extend({
                 res[6] = {"5d-exp-spiter-fire", {{0.98, 0.0}, {1.0, 0.3}}}
                 res[7] = {"5d-exp-biter-explosive", {{0.99, 0.0}, {1.0, 0.3}}}
                 res[8] = {"5d-exp-spiter-rocket", {{0.99, 0.0}, {1.0, 0.3}}}
+                res[9] = {"5d-exp-biter-climber", {{0.99, 0.0}, {1.0, 0.3}}}
+                res[10] = {"5d-exp-biter-swimmer", {{0.99, 0.0}, {1.0, 0.3}}}
                 return res
                 end)(), 
         -- With zero evolution the spawn rate is 6 seconds, with max evolution it is 1.5 seconds
@@ -542,6 +544,140 @@ data:extend({
                     time_before_removed = 15 * 60 * 60, 
                     final_render_layer = "corpse", 
                     animation = spitterdyinganimation(expspitterscale, rocketspittertint)
+                                }, 
+                --Swimmer
+                {
+                    type = "unit", 
+                    name = "5d-exp-biter-swimmer", 
+                    icon = "__base__/graphics/icons/behemoth-biter.png", 
+                    flags = {"placeable-player", "placeable-enemy", "placeable-off-grid", "breaths-air"}, 
+                    max_health = healthexpbitter, 
+                    order = "b-b-a", 
+                    subgroup = "enemies", 
+                    resistances = 
+                    {
+                        {
+                            type = "physical", 
+                            percent = 90
+                                                }
+                                        }, 
+                    spawning_time_modifier = 2, 
+                    healing_per_tick = 0.02, 
+                    collision_box = {{ - 2.8, - 2.8}, {2.8, 2.8}}, 
+                    collision_mask = {"object-layer"}, 
+                    selection_box = {{ - 4.9, - 10.5}, {4.9, 2.1}}, 
+                    sticker_box = {{ - 0.6, - 0.8}, {0.6, 0}}, 
+                    distraction_cooldown = 300, 
+                    --loot =
+                    --{
+                    --  {
+                    --    count_max = 10,
+                    --    count_min = 2,
+                    --    item = "alien-artifact",
+                    --    probability = 1
+                    --  }
+                    --},
+                    attack_parameters = 
+                    {
+                        type = "projectile", 
+                        range = 7, 
+                        cooldown = 10, 
+                        ammo_category = "melee", 
+                        ammo_type = make_unit_melee_ammo_type(biterexpdmg), 
+                        sound =  make_biter_roars(0.6), 
+                        animation = biterattackanimation(expbitterscale, swimmer_biter_tint1, swimmer_biter_tint2)
+                                        }, 
+                    vision_distance = 30, 
+                    movement_speed = 0.1, 
+                    distance_per_frame = 0.2, 
+                    -- in pu
+                    pollution_to_join_attack = 4000, 
+                    corpse = "5d-exp-biter-swimmer-corpse", 
+                    dying_explosion = "blood-explosion-small", 
+                    dying_sound =  make_biter_dying_sounds(1.0), 
+                    working_sound =  make_biter_calls(0.7), 
+                    run_animation = biterrunanimation(expbitterscale, swimmer_biter_tint1, swimmer_biter_tint2)
+                                }, 
+                {
+                    type = "corpse", 
+                    name = "5d-exp-biter-swimmer-corpse", 
+                    icon = "__base__/graphics/icons/big-biter-corpse.png", 
+                    selection_box = {{ - 0.8, - 0.8}, {0.8, 0.8}}, 
+                    selectable_in_game = false, 
+                    subgroup = "corpses", 
+                    order = "c[corpse]-a[bichoA]-a[behemoth]", 
+                    flags = {"placeable-neutral", "placeable-off-grid", "building-direction-8-way", "not-repairable", "not-on-map"}, 
+                    dying_speed = 0.04, 
+                    time_before_removed = 15 * 60 * 60, 
+                    final_render_layer = "corpse", 
+                    animation = biterdieanimation(expbitterscale, swimmer_biter_tint1, swimmer_biter_tint2)
+                                }, 
+                --Swimmer
+                {
+                    type = "unit", 
+                    name = "5d-exp-biter-climber", 
+                    icon = "__base__/graphics/icons/behemoth-biter.png", 
+                    flags = {"placeable-player", "placeable-enemy", "placeable-off-grid", "breaths-air"}, 
+                    max_health = healthexpbitter, 
+                    order = "b-b-a", 
+                    subgroup = "enemies", 
+                    resistances = 
+                    {
+                        {
+                            type = "physical", 
+                            percent = 90
+                                                }
+                                        }, 
+                    spawning_time_modifier = 2, 
+                    healing_per_tick = 0.02, 
+                    collision_box = {{ - 2.8, - 2.8}, {2.8, 2.8}}, 
+                    collision_mask = {}, 
+                    selection_box = {{ - 4.9, - 10.5}, {4.9, 2.1}}, 
+                    sticker_box = {{ - 0.6, - 0.8}, {0.6, 0}}, 
+                    distraction_cooldown = 300, 
+                    --loot =
+                    --{
+                    --  {
+                    --    count_max = 10,
+                    --    count_min = 2,
+                    --    item = "alien-artifact",
+                    --    probability = 1
+                    --  }
+                    --},
+                    attack_parameters = 
+                    {
+                        type = "projectile", 
+                        range = 7, 
+                        cooldown = 10, 
+                        ammo_category = "melee", 
+                        ammo_type = make_unit_melee_ammo_type(biterexpdmg), 
+                        sound =  make_biter_roars(0.6), 
+                        animation = biterattackanimation(expbitterscale, climber_biter_tint1, climber_biter_tint2)
+                                        }, 
+                    vision_distance = 30, 
+                    movement_speed = 0.1, 
+                    distance_per_frame = 0.2, 
+                    -- in pu
+                    pollution_to_join_attack = 4000, 
+                    corpse = "5d-exp-biter-climber-corpse", 
+                    dying_explosion = "blood-explosion-small", 
+                    dying_sound =  make_biter_dying_sounds(1.0), 
+                    working_sound =  make_biter_calls(0.7), 
+                    run_animation = biterrunanimation(expbitterscale, climber_biter_tint1, climber_biter_tint2)
+                                }, 
+                {
+                    type = "corpse", 
+                    name = "5d-exp-biter-climber-corpse", 
+                    icon = "__base__/graphics/icons/big-biter-corpse.png", 
+                    selection_box = {{ - 0.8, - 0.8}, {0.8, 0.8}}, 
+                    selectable_in_game = false, 
+                    subgroup = "corpses", 
+                    order = "c[corpse]-a[bichoA]-a[behemoth]", 
+                    flags = {"placeable-neutral", "placeable-off-grid", "building-direction-8-way", "not-repairable", "not-on-map"}, 
+                    dying_speed = 0.04, 
+                    time_before_removed = 15 * 60 * 60, 
+                    final_render_layer = "corpse", 
+                    animation = biterdieanimation(expbitterscale, climber_biter_tint1, climber_biter_tint2)
                                 }, 
                         })
             

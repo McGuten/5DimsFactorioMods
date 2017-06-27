@@ -8,7 +8,7 @@ data:extend({
         default_value = 60, 
         minimum_value = 1, 
         maximum_value = 1000, 
-        localised_name = "Stacks of player inventory (Default: 60)"
+        localised_name = "[5Dim's mods] Stacks of player inventory (Default: 60)"
         }, 
     {
         type = "int-setting", 
@@ -26,7 +26,7 @@ data:extend({
         default_value = 6, 
         minimum_value = 1, 
         maximum_value = 1000, 
-        localised_name = "Long reach (Default: 6)", 
+        localised_name = "[5Dim's mods] Long reach (Default: 6)", 
         localised_description = "Distance for build and open inventories, for can interact with all screen: 125"
         }, 
     {
@@ -36,7 +36,7 @@ data:extend({
         default_value = 25, 
         minimum_value = 1, 
         maximum_value = 1000, 
-        localised_name = "Light radius (Default: 25)"
+        localised_name = "[5Dim's mods] Light radius (Default: 25)"
         }, 
     {
         type = "double-setting", 
@@ -45,7 +45,7 @@ data:extend({
         default_value = 1, 
         minimum_value = 0.01, 
         maximum_value = 1000, 
-        localised_name = "Crafting speed (Default 1)"
+        localised_name = "[5Dim's mods] Crafting speed (Default 1)"
         }, 
     {
         type = "double-setting", 
@@ -54,7 +54,7 @@ data:extend({
         default_value = 0.01, 
         minimum_value = 0.001, 
         maximum_value = 1000, 
-        localised_name = "Mining speed (Multiplier)"
+        localised_name = "[5Dim's mods] Mining speed (Multiplier)"
         }, 
     {
         type = "bool-setting", 
@@ -62,7 +62,7 @@ data:extend({
         setting_type = "startup", 
         default_value = false, 
         per_user = false, 
-        localised_name = "Small tree collision box"
+        localised_name = "[5Dim's mods] Small tree collision box"
         }, 
     
     -- Cheat changes
@@ -73,7 +73,7 @@ data:extend({
         default_value = 250, 
         minimum_value = 1, 
         maximum_value = 100000, 
-        localised_name = "Player health (Default 250)"
+        localised_name = "[5Dim's mods] Player health (Default 250)"
         }, 
     {
         type = "double-setting", 
@@ -83,7 +83,7 @@ data:extend({
         minimum_value = 0.1, 
         maximum_value = 1000, 
         
-        localised_name = "Player healing per tick (Default 0.15)"
+        localised_name = "[5Dim's mods] Player healing per tick (Default 0.15)"
         }, 
     {
         type = "double-setting", 
@@ -92,7 +92,7 @@ data:extend({
         default_value = 1, 
         minimum_value = 0.01, 
         maximum_value = 1000, 
-        localised_name = "Enemies spawners health (Multiplier)"
+        localised_name = "[5Dim's mods] Enemies spawners health (Multiplier)"
         }, 
     {
         type = "double-setting", 
@@ -101,7 +101,7 @@ data:extend({
         default_value = 1, 
         minimum_value = 0.01, 
         maximum_value = 1000, 
-        localised_name = "Enemies health (Multiplier)"
+        localised_name = "[5Dim's mods] Enemies health (Multiplier)"
         }, 
     {
         type = "double-setting", 
@@ -110,7 +110,7 @@ data:extend({
         default_value = 1, 
         minimum_value = 0.001, 
         maximum_value = 1000, 
-        localised_name = "Enemies healing per tick (Multiplier)"
+        localised_name = "[5Dim's mods] Enemies healing per tick (Multiplier)"
         }, 
     {
         type = "int-setting", 
@@ -119,7 +119,7 @@ data:extend({
         default_value = 6, 
         minimum_value = 1, 
         maximum_value = 1000, 
-        localised_name = "Long Mine (Default: 6)", 
+        localised_name = "[5Dim's mods] Long Mine (Default: 6)", 
         localised_description = "Extend the mining distance of your player: 125"
         }, 
 })
@@ -132,7 +132,7 @@ if mods["5dim_battlefield"] then
             setting_type = "startup", 
             default_value = true, 
             per_user = false, 
-            localised_name = "Suicide bitters", 
+            localised_name = "[5Dim's Battlefield] Suicide bitters", 
             localised_description = "You want to active suicide bitters? (Default: True)"
             }, 
         {
@@ -141,7 +141,25 @@ if mods["5dim_battlefield"] then
             setting_type = "startup", 
             default_value = true, 
             per_user = false, 
-            localised_name = "Experimental enemies", 
+            localised_name = "[5Dim's Battlefield] Experimental enemies", 
+            localised_description = "You want to active experimental enemies? (Default: True)"
+            }, 
+        {
+            type = "bool-setting", 
+            name = "5d-swimmer", 
+            setting_type = "startup", 
+            default_value = true, 
+            per_user = false, 
+            localised_name = "[5Dim's Battlefield] Swimmer bitters", 
+            localised_description = "You want to active experimental enemies? (Default: True)"
+            }, 
+        {
+            type = "bool-setting", 
+            name = "5d-climber", 
+            setting_type = "startup", 
+            default_value = true, 
+            per_user = false, 
+            localised_name = "[5Dim's Battlefield] Climber bitters", 
             localised_description = "You want to active experimental enemies? (Default: True)"
             }, 
     })

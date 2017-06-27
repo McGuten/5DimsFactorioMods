@@ -17,9 +17,9 @@ smallspittertint =  {r = 0.68, g = 0.4, b = 0, a = 1}
 mediumspittertint =  {r = 0.68, g = 0.4, b = 0, a = 1}
 bigspittertint =  {r = 0.68, g = 0.4, b = 0, a = 1}
 behemothspittertint = {r = 0.68, g = 0.4, b = 0, a = 1}
-firespittertint =  {r = 0.5, g = 0, b = 0.5, a = 1}
-rocketspittertint =  {r = 0.5, g = 1, b = 0.5, a = 1}
-expspittertint = {r = 0, g = 0, b = 0, a = 1}
+firespittertint =  {r = 0.1, g = 1, b = 0.1, a = 1}
+rocketspittertint =  {r = 1, g = 0, b = 1, a = 1}
+expspittertint = {r = 0.68, g = 0.4, b = 0, a = 1}
 
 --Biter color
 small_biter_tint1 = {r = 1, g = 1, b = 0, a = 1}
@@ -34,8 +34,8 @@ big_biter_tint2 = {r = 0, g = 0, b = 0, a = 1}
 behemoth_biter_tint1 = {r = 1, g = 1, b = 0, a = 1}
 behemoth_biter_tint2 = {r = 0, g = 0, b = 0, a = 1}
 
-exp_biter_tint1 = {r = 0, g = 0, b = 0, a = 1}
-exp_biter_tint2 = {r = 1, g = 1, b = 1, a = 1}
+exp_biter_tint1 = {r = 1, g = 1, b = 0, a = 1}
+exp_biter_tint2 = {r = 0, g = 0, b = 0, a = 1}
 
 laser_biter_tint1 = {r = 0, g = 0, b = 1, a = 1}
 laser_biter_tint2 = {r = 0, g = 0, b = 0, a = 1}
@@ -45,6 +45,12 @@ physical_biter_tint2 = {r = 0, g = 0, b = 0, a = 1}
 
 explosive_biter_tint1 = {r = 1, g = 0, b = 0, a = 1}
 explosive_biter_tint2 = {r = 0, g = 0, b = 0, a = 1}
+
+swimmer_biter_tint1 = {r = 0.2, g = 0.9, b = 1, a = 1}
+swimmer_biter_tint2 = {r = 0, g = 0, b = 0, a = 1}
+
+climber_biter_tint1 = {r = 1, g = 0.3, b = 0, a = 1}
+climber_biter_tint2 = {r = 0, g = 0, b = 0, a = 1}
 
 --bichoAscale = 0.9
 bichoA_tint1 = {r = 0.0, g = 0.6, b = 0.0, a = 0.65}

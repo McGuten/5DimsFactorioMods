@@ -3,7 +3,7 @@ data:extend({
     {
         type = "item", 
         name = "5d-industrial-furnace", 
-        icon = "__5dim_resources__/graphics/icon/icon_5d_electric-furnace_3_.png", 
+        icon = "__5dim_resources__/graphics/icon/ifurnace.png", 
         flags = {"goes-to-quickbar"}, 
         subgroup = "furnace-electric", 
         order = "b", 
