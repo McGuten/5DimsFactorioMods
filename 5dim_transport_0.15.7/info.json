@@ -1,11 +1,11 @@
 {
-    "name": "5dim_battlefield",
-    "version": "0.15.3",
+    "name": "5dim_transport",
+    "version": "0.15.7",
     "factorio_version": "0.15",
-    "title": "5dim's Mod - Battlefield",
+    "title": "5dim's Mod - Transport",
     "author": "5Dim",
     "contact": "mcguten.videos@gmail.com",
     "homepage": "https://mods.factorio.com/mods",
-    "description": "Enemies for 5dim's mod",
+    "description": "Transport for 5dim's mod",
     "dependencies": ["5dim_core >= 0.15.2"]
 }
