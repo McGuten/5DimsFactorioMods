@@ -254,6 +254,10 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "5d-tesla-turret"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "5d-gun-turret-exp"
       }
     },
     prerequisites = {"laser-turrets-3"},

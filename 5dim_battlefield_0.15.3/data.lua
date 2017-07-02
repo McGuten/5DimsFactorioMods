@@ -38,6 +38,9 @@ require("prototypes.big-laser")
 require("prototypes.small-ammo")
 require("prototypes.big-ammo")
 
+--Experimental turret
+require("prototypes.exp-turret")
+
 --Tesla turret
 require("prototypes.tesla-turret")
 

@@ -1,5 +1,4 @@
 data:extend({
-    -- Basic changes
     {
         type = "int-setting", 
         name = "5d-change-inventory", 
@@ -71,8 +70,6 @@ data:extend({
         per_user = false, 
         localised_name = "[5Dim's mods] Small tree collision box"
     }, 
-    
-    -- Cheat changes
     {
         type = "int-setting", 
         name = "5d-hp", 

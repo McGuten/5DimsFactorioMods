@@ -1,1 +1,1 @@
-data.raw.item["electric-mining-drill"].fast_replaceable_group = "mining-drill";
+data.raw["mining-drill"]["electric-mining-drill"].fast_replaceable_group = "mining-drill";
