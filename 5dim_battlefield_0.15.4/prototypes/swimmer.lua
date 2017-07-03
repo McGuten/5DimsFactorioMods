@@ -72,7 +72,7 @@ data:extend(
                     res[2] = {"5d-small-biter-swimmer", {{0.15, 0.0}, {0.6, 0.3}, {0.8, 0.1}}}
                     res[3] = {"5d-medium-biter-swimmer", {{0.4, 0.0}, {1.0, 0.4}}}
                     res[4] = {"5d-big-biter-swimmer", {{0.65, 0.0}, {1.0, 0.3}}}
-                    res[5] = {"5d-big-biter-swimmer", {{0.8, 0.0}, {1.0, 0.3}}}
+                    res[5] = {"5d-behemoth-biter-swimmer", {{0.8, 0.0}, {1.0, 0.3}}}
                     return res
                         end)(), 
             -- With zero evolution the spawn rate is 6 seconds, with max evolution it is 1.5 seconds
