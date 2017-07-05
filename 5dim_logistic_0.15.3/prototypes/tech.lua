@@ -95,4 +95,59 @@ data:extend({
     },
     order = "c-k-a",
   },
+  {
+    type = "technology",
+    name = "logistic-system-2",
+    icon = "__base__/graphics/technology/logistic-system.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "5d-active"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "5d-requester"
+      }
+    },
+    prerequisites = { "logistic-system"},
+    unit = {
+      count = 150,
+      ingredients = {
+        {"science-pack-1", 1},
+        {"science-pack-2", 1},
+        {"science-pack-3", 1}
+      },
+      time = 30
+    },
+    order = "c-k-d",
+  },
+  {
+    type = "technology",
+    name = "construction-robotics-2",
+    icon = "__base__/graphics/technology/construction-robotics.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "5d-passive"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "5d-storage"
+      },
+    },
+    prerequisites = {"construction-robotics"},
+    unit =
+    {
+      count = 50,
+      ingredients =
+      {
+        {"science-pack-1", 1},
+        {"science-pack-2", 1}
+      },
+      time = 30
+    },
+    order = "c-k-a",
+  },
 })
