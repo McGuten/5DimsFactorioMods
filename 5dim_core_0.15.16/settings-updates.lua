@@ -221,5 +221,51 @@ if mods["5dim_infiniteresearch"] then
             localised_name = "[5Dim's Infinite Research] Infinite research speed", 
             localised_description = "You want to active infinite research speed? (Default: True)"
         }, 
+        {
+            type = "bool-setting", 
+            name = "5d-speed-gun-turret", 
+            order = "ef",
+            setting_type = "startup", 
+            default_value = true, 
+            per_user = false, 
+            localised_name = "[5Dim's Infinite Research] Infinite research speed for guns and turrets", 
+            localised_description = "You want to active infinite research for speed guns and turrets? (Default: True)"
+        }, 
+        {
+            type = "bool-setting", 
+            name = "5d-bracking", 
+            order = "eg",
+            setting_type = "startup", 
+            default_value = true, 
+            per_user = false, 
+            localised_name = "[5Dim's Infinite Research] Infinite research bracking", 
+            localised_description = "You want to active infinite research for bracking? (Default: True)"
+        }, 
+    })
+end
+
+if mods["5dim_vehicle"] and mods["5dim_equipment"] then
+    --order z for misc
+    data:extend({
+        {
+            type = "bool-setting", 
+            name = "5d-grid", 
+            order = "za",
+            setting_type = "startup", 
+            default_value = true, 
+            per_user = false, 
+            localised_name = "[5Dim's Vehicles & Equipment] Active vehicle grids", 
+            localised_description = "You want to active vehicle grids like a nanoarmor? (Default: True)"
+        }, 
+        {
+            type = "bool-setting", 
+            name = "5d-grid-override", 
+            order = "zb",
+            setting_type = "startup", 
+            default_value = false, 
+            per_user = false, 
+            localised_name = "[5Dim's Vehicles & Equipment] Override all vehicle grid", 
+            localised_description = "You want to active all vehicle grids like a nanoarmor? (just work with non grid vehicles and need active vehicle grids) (Default: False)"
+        }, 
     })
 end

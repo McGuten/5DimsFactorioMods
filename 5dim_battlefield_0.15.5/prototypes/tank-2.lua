@@ -2,196 +2,68 @@ data:extend({
 --Item
   {
     type = "item",
-    name = "5d-artillery",
-    icon = "__5dim_battlefield__/graphics/icon/artillery.png",
+    name = "5d-tank",
+    icon = "__base__/graphics/icons/tank.png",
     flags = {"goes-to-quickbar"},
-    subgroup = "vehicles-arty",
-    order = "a",
-    place_result = "5d-artillery",
-    stack_size = 1
-  },
-  {
-    type = "projectile",
-    name = "artillery-shell",
-    flags = {"not-on-map"},
-    acceleration = 0.005,
-    action =
-    {
-      {
-        type = "direct",
-        action_delivery =
-        {
-          type = "instant",
-          target_effects =
-          {
-            {
-              type = "create-entity",
-              entity_name = "medium-explosion"
-            },
-            {
-              type = "create-entity",
-              entity_name = "small-scorchmark",
-              check_buildability = true
-            }
-          }
-        }
-      },
-      {
-        type = "area",
-        perimeter = 5,
-        action_delivery =
-        {
-          type = "instant",
-          target_effects =
-          {
-			{
-				type = "damage",
-				damage = { amount = 150 , type = "physical"}
-			},
-			{
-				type = "damage",
-				damage = { amount = 50 , type = "explosion"}
-			}
-		  }
-        }	
-      }
-    },
-    light = {intensity = 0.5, size = 4},
-    animation =
-    {
-      filename = "__base__/graphics/entity/bullet/bullet.png",
-      frame_count = 1,
-      width = 3,
-      height = 50,
-      priority = "high"
-    },
-    smoke = capsule_smoke,
-  },
-  {
-    type = "recipe",
-    name = "artillery-shell",
-    enabled = false,
-    energy_required = 3,
-    ingredients =
-    {
-      {"steel-plate", 6},
-      {"plastic-bar", 5},
-      {"explosives", 2},
-    },
-    result = "artillery-shell"
-  },
-  {
-    type = "ammo",
-    name = "artillery-shell",
-    icon = "__5dim_battlefield__/graphics/icon/artillery-shell.png",
-    flags = {"goes-to-main-inventory"},
-    ammo_type =
-    {
-      category = "artillery-shell",
-      target_type = "position",
-      source_effects =
-      {
-        type = "create-explosion",
-        entity_name = "explosion-gunshot"
-      },
-      action =
-      {
-        type = "direct",
-        action_delivery =
-        {
-          type = "projectile",
-          projectile = "artillery-shell",
-          starting_speed = 0.3,
-          max_range = 150,
-        }
-      }
-    },
-    subgroup = "vehicles-arty",
-    order = "z",
-    stack_size = 100
-  },
-  {
-    type = "gun",
-    name = "5d-tank-cannon",
-    icon = "__base__/graphics/icons/tank-cannon.png",
-    flags = {"goes-to-main-inventory", "hidden"},
-    subgroup = "gun",
-    order = "z[tank]-a[cannon]",
-    attack_parameters =
-    {
-      type = "projectile",
-      ammo_category = "artillery-shell",
-      cooldown = 360,
-      movement_slow_down_factor = 0,
-      projectile_creation_distance = 1.6,
-      projectile_center = {-0.15625, -0.07812},
-      range = 150,
-      sound =
-      {
-        {
-          filename = "__base__/sound/fight/tank-cannon.ogg",
-          volume = 1.0
-        }
-      },
-    },
-    stack_size = 5
-  },
-  {
-    type = "gun",
-    name = "5d-tank-machine-gun",
-    icon = "__base__/graphics/icons/submachine-gun.png",
-    flags = {"goes-to-main-inventory", "hidden"},
-    subgroup = "gun",
-    order = "a[basic-clips]-b[tank-machine-gun]",
-    attack_parameters =
-    {
-      type = "projectile",
-      ammo_category = "bullet",
-      cooldown = 4,
-      movement_slow_down_factor = 0.7,
-      shell_particle =
-      {
-        name = "shell-particle",
-        direction_deviation = 0.1,
-        speed = 0.1,
-        speed_deviation = 0.03,
-        center = {0, 0},
-        creation_distance = -0.6875,
-        starting_frame_speed = 0.4,
-        starting_frame_speed_deviation = 0.1
-      },
-      projectile_center = {-0.15625, -0.07812},
-      projectile_creation_distance = 1,
-      range = 15,
-      sound = make_heavy_gunshot_sounds(),
-    },
+    subgroup = "vehicles-tank",
+    order = "b",
+    place_result = "5d-tank",
     stack_size = 1
   },
 --Recipe
   {
     type = "recipe",
-    name = "5d-artillery",
+    name = "5d-tank",
     enabled = false,
     ingredients =
     {
-      {"engine-unit", 16},
-      {"steel-plate", 50},
-      {"iron-gear-wheel", 15},
-      {"advanced-circuit", 5}
+        {"tank", 1},
+        {"engine-unit", 16},
+        {"steel-plate", 50},
+        {"iron-gear-wheel", 15},
+        {"advanced-circuit", 5}
     },
-    result = "5d-artillery"
+    result = "5d-tank"
   },
 --Entity
   {
     type = "car",
-    name = "5d-artillery",
+    name = "5d-tank",
     icon = "__base__/graphics/icons/tank.png",
     flags = {"pushable", "placeable-neutral", "player-creation", "placeable-off-grid"},
-    minable = {mining_time = 1, result = "5d-artillery"},
-    max_health = 750,
+    minable = {mining_time = 1, result = "5d-tank"},
+    max_health = 3000,
     corpse = "medium-remnants",
     dying_explosion = "medium-explosion",
     energy_per_hit_point = 0.5,
+    resistances =
+    {
+      {
+        type = "fire",
+        decrease = 15,
+        percent = 50
+      },
+      {
+        type = "physical",
+        decrease = 15,
+        percent = 30
+      },
+      {
+        type = "impact",
+        decrease = 50,
+        percent = 60
+      },
+      {
+        type = "explosion",
+        decrease = 15,
+        percent = 30
+      },
+      {
+        type = "acid",
+        decrease = 10,
+        percent = 20
+      }
+    },
     collision_box = {{-0.9, -1.3}, {0.9, 1.3}},
     selection_box = {{-0.9, -1.3}, {0.9, 1.3}},
     effectivity = 0.6,
@@ -263,22 +135,22 @@ data:extend({
           stripes =
           {
             {
-             filename = "__5dim_battlefield__/graphics/icon/base-1.png",
+             filename = "__base__/graphics/entity/tank/base-1.png",
              width_in_frames = 2,
              height_in_frames = 16,
             },
             {
-             filename = "__5dim_battlefield__/graphics/icon/base-2.png",
+             filename = "__base__/graphics/entity/tank/base-2.png",
              width_in_frames = 2,
              height_in_frames = 16,
             },
             {
-             filename = "__5dim_battlefield__/graphics/icon/base-3.png",
+             filename = "__base__/graphics/entity/tank/base-3.png",
              width_in_frames = 2,
              height_in_frames = 16,
             },
             {
-             filename = "__5dim_battlefield__/graphics/icon/base-4.png",
+             filename = "__base__/graphics/entity/tank/base-4.png",
              width_in_frames = 2,
              height_in_frames = 16,
             }
@@ -351,7 +223,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__5dim_battlefield__/graphics/icon/turret.png",
+          filename = "__base__/graphics/entity/tank/turret.png",
           line_length = 8,
           width = 92,
           height = 69,
@@ -382,7 +254,7 @@ data:extend({
         }
       }
     },
-    turret_rotation_speed = 0.20 / 35,
+    turret_rotation_speed = 0.35 / 60,
     turret_return_timeout = 300,
     stop_trigger_speed = 0.2,
     sound_no_fuel =
@@ -430,8 +302,8 @@ data:extend({
     close_sound = { filename = "__base__/sound/car-door-close.ogg", volume = 0.7 },
     rotation_speed = 0.0035,
     tank_driving = true,
-    weight = 200000,
-    inventory_size = 5,
-    guns = { "5d-tank-cannon", "5d-tank-machine-gun"},
+    weight = 20000,
+    inventory_size = 80,
+    guns = { "tank-cannon", "tank-machine-gun" },
   },
 })

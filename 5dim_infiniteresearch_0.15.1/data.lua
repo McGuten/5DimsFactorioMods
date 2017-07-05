@@ -20,3 +20,15 @@ if settings.startup["5d-speed"].value then
 	--Logistics
 	require("prototypes.tech-speed")
 end
+if settings.startup["5d-speed-gun-turret"].value then
+	--Speed research for ammo and turrets
+	require("prototypes.bullet-ammo")
+	require("prototypes.cannon-ammo")
+	require("prototypes.laser-turret")
+	require("prototypes.rocket-ammo")
+	require("prototypes.shotgun-ammo")
+end
+if settings.startup["5d-bracking"].value then
+	--Bracking
+	require("prototypes.bracking")
+end
