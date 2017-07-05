@@ -233,13 +233,13 @@ if mods["5dim_infiniteresearch"] then
         }, 
         {
             type = "bool-setting", 
-            name = "5d-braking", 
+            name = "5d-bracking", 
             order = "eg",
             setting_type = "startup", 
             default_value = true, 
             per_user = false, 
-            localised_name = "[5Dim's Infinite Research] Infinite research braking", 
-            localised_description = "You want to active infinite research for braking? (Default: True)"
+            localised_name = "[5Dim's Infinite Research] Infinite research bracking", 
+            localised_description = "You want to active infinite research for bracking? (Default: True)"
         }, 
     })
 end

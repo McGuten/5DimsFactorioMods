@@ -28,7 +28,7 @@ if settings.startup["5d-speed-gun-turret"].value then
 	require("prototypes.rocket-ammo")
 	require("prototypes.shotgun-ammo")
 end
-if settings.startup["5d-braking"].value then
+if settings.startup["5d-bracking"].value then
 	--Bracking
-	require("prototypes.braking")
+	require("prototypes.bracking")
 end
