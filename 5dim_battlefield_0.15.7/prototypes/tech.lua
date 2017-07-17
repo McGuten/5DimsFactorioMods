@@ -274,4 +274,29 @@ data:extend({
     },
     order = "a-j-b"
   },
+  {
+    type = "technology",
+    name = "flamethrower-2",
+    icon = "__base__/graphics/technology/flamethrower.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "5d-flamethrower-turret-2"
+      }
+    },
+    prerequisites = {"flamethrower"},
+    unit =
+    {
+      count = 100,
+      ingredients =
+      {
+        {"science-pack-1", 1},
+        {"science-pack-2", 1},
+        {"military-science-pack", 1}
+      },
+      time = 30
+    },
+    order = "e-c-b"
+  },
 })

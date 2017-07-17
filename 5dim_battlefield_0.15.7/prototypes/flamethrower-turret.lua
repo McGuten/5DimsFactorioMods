@@ -779,7 +779,7 @@ data:extend({
   {
     type = "recipe",
     name = "5d-flamethrower-turret-2",
-    enabled = true,
+    enabled = false,
     energy_required = 20,
     ingredients =
     {
