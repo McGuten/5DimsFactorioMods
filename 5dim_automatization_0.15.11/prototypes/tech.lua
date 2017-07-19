@@ -504,7 +504,7 @@ if not mods["LoaderRedux"] then
                     recipe = "loader"
                             }, 
                     }, 
-            prerequisites = {"stack-inserter"}, 
+            prerequisites = {"logistics"}, 
             unit = 
             {
                 count = 150, 
@@ -529,7 +529,7 @@ if not mods["LoaderRedux"] then
                     recipe = "fast-loader"
                             }, 
                     }, 
-            prerequisites = {"loader"}, 
+            prerequisites = {"logistics-2"}, 
             unit = 
             {
                 count = 250, 
@@ -555,7 +555,7 @@ if not mods["LoaderRedux"] then
                     recipe = "express-loader"
                             }, 
                     }, 
-            prerequisites = {"loader-2"}, 
+            prerequisites = {"logistics-3"}, 
             unit = 
             {
                 count = 350, 
@@ -587,7 +587,7 @@ if mods["5dim_transport"] then
                     recipe = "5d-loader-4"
                 }, 
             }, 
-            prerequisites = {"loader-3"}, 
+            prerequisites = {"logistics-4"}, 
             unit = 
             {
                 count = 350, 
@@ -614,7 +614,7 @@ if mods["5dim_transport"] then
                     recipe = "5d-loader-5"
                 }, 
             }, 
-            prerequisites = {"loader-4"}, 
+            prerequisites = {"logistics-5"}, 
             unit = 
             {
                 count = 350, 
