@@ -17,8 +17,9 @@ data:extend({
     name = "5d-repair-pack-2",
     ingredients =
     {
-      {"electronic-circuit", 5},
-      {"iron-gear-wheel", 3}
+      {"repair-pack", 1},
+      {"electronic-circuit", 2},
+      {"iron-gear-wheel", 1}
     },
     result = "5d-repair-pack-2"
   }

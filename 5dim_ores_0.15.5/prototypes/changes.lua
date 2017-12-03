@@ -1,7 +1,9 @@
-data.raw.recipe["science-pack-1"].ingredients = {
-    {"copper-plate", 1},
-    {"5d-tin-gear-wheel", 1},
-};
+if not mods["angelssmelting"] then
+    data.raw.recipe["science-pack-1"].ingredients = {
+        {"copper-plate", 1},
+        {"5d-tin-gear-wheel", 1},
+    };
+end
 data.raw.recipe["inserter"].ingredients = {
     {"electronic-circuit", 1},
     {"iron-gear-wheel", 1},
