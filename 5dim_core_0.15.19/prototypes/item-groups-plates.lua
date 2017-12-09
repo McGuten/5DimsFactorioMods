@@ -21,32 +21,38 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "plates-plates2",
+    name = "plates-plates",
     group = "plates",
     order = "c"
   },
   {
     type = "item-subgroup",
-    name = "plates-plates",
+    name = "plates-plates2",
     group = "plates",
     order = "d"
   },
   {
     type = "item-subgroup",
-    name = "plates-plates3",
+    name = "plates-industrial-ore",
     group = "plates",
     order = "e"
   },
   {
     type = "item-subgroup",
-    name = "plates-misc",
+    name = "plates-industrial-dust",
     group = "plates",
     order = "f"
   },
   {
     type = "item-subgroup",
-    name = "plates-fuel",
+    name = "plates-misc",
     group = "plates",
     order = "g"
+  },
+  {
+    type = "item-subgroup",
+    name = "plates-fuel",
+    group = "plates",
+    order = "h"
   },
 })

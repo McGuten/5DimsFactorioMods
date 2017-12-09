@@ -23,6 +23,16 @@ data:extend({
 	},
     result = "5d-iron-chest-mk2-2"
   },
+  {
+    type = "recipe",
+    name = "5d-iron-chest-mk2-3",
+    enabled = "false",
+    ingredients = 
+  {
+    {"5d-iron-chest-mk2-2", 1},
+  },
+    result = "5d-iron-chest-mk2"
+  },
 
 --Entity
   {

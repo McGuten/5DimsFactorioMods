@@ -193,4 +193,158 @@ data:extend({
 		result = "5d-tin-dust",
 		result_count = 2,
 	},
+
+	--Recipes for industrial furnace
+	--Dust
+	{
+		type = "recipe",
+		name = "5d-aluminium-plate-industrial-dust",
+		icon = "__5dim_core__/graphics/icon/aluminium-plate.png",
+		subgroup = "plates-industrial-dust",
+		order = "af",
+		category = "industrial-furnace",
+		energy_required = 65,
+		ingredients =
+		{
+			{ "5d-aluminium-dust", 85},
+		},
+		result = "aluminium-plate",
+		result_count = 100,
+	},
+	{
+		type = "recipe",
+		name = "5d-tin-plate-industrial-dust",
+		icon = "__5dim_core__/graphics/icon/tin-plate.png",
+		subgroup = "plates-industrial-dust",
+		order = "ac",
+		category = "industrial-furnace",
+		energy_required = 65,
+		ingredients =
+		{
+			{ "5d-tin-dust", 85},
+		},
+		result = "tin-plate",
+		result_count = 100,
+	},
+	{
+		type = "recipe",
+		name = "5d-zinc-plate-industrial-dust",
+		icon = "__5dim_core__/graphics/icon/zinc-plate.png",
+		subgroup = "plates-industrial-dust",
+		order = "ae",
+		category = "industrial-furnace",
+		energy_required = 65,
+		ingredients =
+		{
+			{ "5d-zinc-dust", 85},
+		},
+		result = "zinc-plate",
+		result_count = 100,
+	},
+	{
+		type = "recipe",
+		name = "5d-lead-plate-industrial-dust",
+		icon = "__5dim_core__/graphics/icon/lead-plate.png",
+		subgroup = "plates-industrial-dust",
+		order = "ad",
+		category = "industrial-furnace",
+		energy_required = 65,
+		ingredients =
+		{
+			{ "5d-lead-dust", 85},
+		},
+		result = "lead-plate",
+		result_count = 100,
+	},
+	{
+		type = "recipe",
+		name = "5d-gold-plate-industrial-dust",
+		icon = "__5dim_core__/graphics/icon/gold-plate.png",
+		subgroup = "plates-industrial-dust",
+		order = "ag",
+		category = "industrial-furnace",
+		energy_required = 65,
+		ingredients =
+		{
+			{ "5d-gold-dust", 85},
+		},
+		result = "gold-plate",
+		result_count = 100,
+	},
+	--Ores
+	{
+		type = "recipe",
+		name = "5d-aluminium-plate-industrial",
+		icon = "__5dim_core__/graphics/icon/aluminium-plate.png",
+		subgroup = "plates-industrial-ore",
+		order = "af",
+		category = "industrial-furnace",
+		energy_required = 65,
+		ingredients =
+		{
+			{ "bauxite-ore", 85},
+		},
+		result = "aluminium-plate",
+		result_count = 100,
+	},
+	{
+		type = "recipe",
+		name = "5d-tin-plate-industrial",
+		icon = "__5dim_core__/graphics/icon/tin-plate.png",
+		subgroup = "plates-industrial-ore",
+		order = "ac",
+		category = "industrial-furnace",
+		energy_required = 65,
+		ingredients =
+		{
+			{ "tin-ore", 85},
+		},
+		result = "tin-plate",
+		result_count = 100,
+	},
+	{
+		type = "recipe",
+		name = "5d-zinc-plate-industrial",
+		icon = "__5dim_core__/graphics/icon/zinc-plate.png",
+		subgroup = "plates-industrial-ore",
+		order = "ae",
+		category = "industrial-furnace",
+		energy_required = 65,
+		ingredients =
+		{
+			{ "5d-zinc-dust", 85},
+		},
+		result = "zinc-plate",
+		result_count = 100,
+	},
+	{
+		type = "recipe",
+		name = "5d-lead-plate-industrial",
+		icon = "__5dim_core__/graphics/icon/lead-plate.png",
+		subgroup = "plates-industrial-ore",
+		order = "ad",
+		category = "industrial-furnace",
+		energy_required = 65,
+		ingredients =
+		{
+			{ "5d-lead-dust", 85},
+		},
+		result = "lead-plate",
+		result_count = 100,
+	},
+	{
+		type = "recipe",
+		name = "5d-gold-plate-industrial",
+		icon = "__5dim_core__/graphics/icon/gold-plate.png",
+		subgroup = "plates-industrial-ore",
+		order = "ag",
+		category = "industrial-furnace",
+		energy_required = 65,
+		ingredients =
+		{
+			{ "5d-gold-dust", 85},
+		},
+		result = "gold-plate",
+		result_count = 100,
+	},
 })
