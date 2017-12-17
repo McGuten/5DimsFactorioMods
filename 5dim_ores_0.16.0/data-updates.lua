@@ -13,7 +13,7 @@ require("prototypes.changes")
 
 
 if automatization == true then
-require("prototypes.automatization")
+	require("prototypes.automatization")
 end
 
 -- if battlefield == true then
@@ -25,29 +25,29 @@ end
 -- end
 
 if energy == true then
-require("prototypes.energy")
+	require("prototypes.energy")
 end
 
 if logistic == true then
-require("prototypes.logistic")
+	require("prototypes.logistic")
 end
 
 if mining == true then
-require("prototypes.mining")
+	require("prototypes.mining")
 end
 
 if modules == true then
-require("prototypes.modules")
+	require("prototypes.modules")
 end
 
 if resources == true then
-require("prototypes.resources")
+	require("prototypes.resources")
 end
 
 if transport == true then
-require("prototypes.transport")
+	require("prototypes.transport")
 end
 
 if vehicles == true then
-require("prototypes.vehicles")
+	require("prototypes.vehicles")
 end
