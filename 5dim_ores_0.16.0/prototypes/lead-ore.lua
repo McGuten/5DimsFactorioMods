@@ -26,25 +26,26 @@ lead =
   }
 }
 
-  data:extend({
+data:extend({
 -- Item
-  {
-    type = "item",
-    name = "lead-plate",
-    icon = "__5dim_core__/graphics/icon/lead-plate.png",
-    flags = {"goes-to-main-inventory"},
-    subgroup = "plates-plates",
-    order = "d",
-    stack_size = 200
-  },
+{
+  type = "item",
+  name = "lead-plate",
+  icon = "__5dim_core__/graphics/icon/lead-plate.png",
+  flags = {"goes-to-main-inventory"},
+  icon_size = 32,
+  subgroup = "plates-plates",
+  order = "d",
+  stack_size = 200
+},
 
 --Recipe
-  {
-    type = "recipe",
-    name = "5d-lead-plate",
-    category = "smelting",
-    energy_required = 2,
-    ingredients = {{ "lead-ore", 3}},
-    result = "lead-plate"
-  },
+{
+  type = "recipe",
+  name = "5d-lead-plate",
+  category = "smelting",
+  energy_required = 2,
+  ingredients = {{ "lead-ore", 3}},
+  result = "lead-plate"
+},
 })
