@@ -1,0 +1,10 @@
+{
+    "name": "5dim_botrecaller",
+    "version": "0.16.1",
+    "factorio_version": "0.16",
+    "title": "5Dim's mod - Bot Recaller",
+    "author": "Original: Cpeosphoros and Update: McGuten",
+    "homepage": "https://forums.factorio.com/viewtopic.php?f=95&t=39035",
+    "description": "Utility mod to help recall/collect bots within a network.",
+    "dependencies": ["5dim_core >= 0.16.3"]
+}
