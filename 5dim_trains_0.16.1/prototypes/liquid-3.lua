@@ -38,7 +38,7 @@ data:extend({
         mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"}, 
         max_health = 600, 
         fast_replaceable_group = "fluid-wagon",
-        total_capacity = 75000 * 3, 
+        capacity = 75000 * 3, 
         corpse = "medium-remnants", 
         dying_explosion = "medium-explosion", 
         collision_box = {{ - 0.6, - 2.4}, {0.6, 2.4}}, 
