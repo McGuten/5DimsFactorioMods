@@ -1,7 +1,7 @@
 data:extend({
 --Item
   {
-    type = "item",
+    type = "item-with-entity-data",
     name = "5d-tank",
     icon = "__base__/graphics/icons/tank.png",
     flags = {"goes-to-quickbar"},
