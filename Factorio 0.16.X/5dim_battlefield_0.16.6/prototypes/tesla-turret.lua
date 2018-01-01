@@ -75,7 +75,7 @@ data:extend({
   flags = { "placeable-player", "placeable-enemy", "player-creation"},
   minable = { mining_time = 0.5, result = "5d-tesla-turret" },
   icon_size = 32,
-  max_health = 500,
+  max_health = 750,
   corpse = "medium-remnants",
   fast_replaceable_group = "turret",
   collision_box = {{ -0.7, -0.7}, {0.7, 0.7}},
@@ -131,7 +131,7 @@ data:extend({
     projectile_center = {0, -0.2},
     projectile_creation_distance = 1.4,
     range = 75,
-    damage_modifier = 301,
+    damage_modifier = 1101,
     ammo_type =
     {
       type = "projectile",

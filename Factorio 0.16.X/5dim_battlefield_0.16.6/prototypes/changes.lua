@@ -52,7 +52,7 @@ data:extend({
     flags = {"placeable-player", "player-creation"},
     minable = {mining_time = 0.5, result = "gun-turret"},
     icon_size = 32,
-    max_health = 400,
+    max_health = 1000,
     corpse = "medium-remnants",
 	fast_replaceable_group = "turret",
     collision_box = {{-0.7, -0.7 }, {0.7, 0.7}},
@@ -114,7 +114,7 @@ data:extend({
         starting_frame_speed = 0.2,
         starting_frame_speed_deviation = 0.1
       },
-      range = 17,
+      range = 25,
       sound = make_heavy_gunshot_sounds(),
     },
 	call_for_help_radius = 40,

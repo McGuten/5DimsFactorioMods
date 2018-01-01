@@ -1,53 +1,55 @@
 require ("prototypes.turret-function")
-local color = {r=1, g=1, b=0.1, a=1}
+local color = {r=0, g=1, b=1, a=1}
 data:extend({
 --Item
   {
     type = "item",
-    name = "5d-gun-turret-small",
-    icon = "__5dim_battlefield__/graphics/icon/icon-small-gun-turret.png",
+    name = "5d-gun-turret-exp",
+    icon = "__5dim_battlefield__/graphics/icon/icon-exp-gun-turret.png",
     flags = {"goes-to-quickbar"},
     icon_size = 32,
     subgroup = "defense-gun",
-    order = "a",
-    place_result = "5d-gun-turret-small",
+    order = "d",
+    place_result = "5d-gun-turret-exp",
     stack_size = 50
   },
 --Recipe
   {
     type = "recipe",
-    name = "5d-gun-turret-small",
+    name = "5d-gun-turret-exp",
     enabled = false,
     energy_required = 10,
     ingredients =
     {
-      {"iron-gear-wheel", 5},
-      {"copper-plate", 15},
+      {"processing-unit", 2},
+      {"iron-gear-wheel", 20},
+	    {"steel-plate", 5},
+      {"copper-plate", 25},
       {"iron-plate", 20}
     },
-    result = "5d-gun-turret-small"
+    result = "5d-gun-turret-exp"
   },
 
 --Entity
   {
     type = "ammo-turret",
-    name = "5d-gun-turret-small",
-    icon = "__5dim_battlefield__/graphics/icon/icon-small-gun-turret.png",
+    name = "5d-gun-turret-exp",
+    icon = "__5dim_battlefield__/graphics/icon/icon-exp-gun-turret.png",
     flags = {"placeable-player", "player-creation"},
-    minable = {mining_time = 0.5, result = "5d-gun-turret-small"},
+    minable = {mining_time = 0.5, result = "5d-gun-turret-exp"},
     icon_size = 32,
-    max_health = 400,
+    max_health = 750,
     corpse = "medium-remnants",
-	fast_replaceable_group = "turret",
+	  fast_replaceable_group = "turret",
     collision_box = {{-0.7, -0.7 }, {0.7, 0.7}},
     selection_box = {{-1, -1 }, {1, 1}},
-    rotation_speed = 0.02,
-    preparing_speed = 0.15,
-    folding_speed = 0.15,
+    rotation_speed = 0.015,
+    preparing_speed = 0.08,
+    folding_speed = 0.08,
     dying_explosion = "medium-explosion",
     inventory_size = 1,
-    automated_ammo_count = 15,
-    attacking_speed = 5.0,
+    automated_ammo_count = 5,
+    attacking_speed = 0.05,
     folded_animation = 
     {
       layers =
@@ -83,10 +85,10 @@ data:extend({
     {
       type = "projectile",
       ammo_category = "bullet",
-      cooldown = 3,
+      cooldown = 300,
       projectile_creation_distance = 1.39375,
       projectile_center = {0.0625, -0.0875}, -- same as gun_turret_attack shift
-      damage_modifier = 1.5,
+      damage_modifier = 301,
       shell_particle =
       {
         name = "shell-particle",
@@ -98,7 +100,7 @@ data:extend({
         starting_frame_speed = 0.2,
         starting_frame_speed_deviation = 0.1
       },
-      range = 13,
+      range = 75,
       sound = make_heavy_gunshot_sounds(),
     },
 	call_for_help_radius = 40,
