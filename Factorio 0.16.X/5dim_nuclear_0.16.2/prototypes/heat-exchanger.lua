@@ -75,7 +75,8 @@ data:extend({
       {
         {type = "output", position = {0, -1.5}}
       },
-      production_type = "output"
+      production_type = "output",
+      filter = "steam"
     },
     fluid_input =
     {
