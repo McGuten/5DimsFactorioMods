@@ -95,7 +95,7 @@ data:extend({
           width = 36,
           height = 19,
           frame_count = 12,
-          shift = { 0.0625, 0.375}
+          shift = { -0.0625, 0.65625}
         },
         light = {intensity = 1, size = 1}
       }
