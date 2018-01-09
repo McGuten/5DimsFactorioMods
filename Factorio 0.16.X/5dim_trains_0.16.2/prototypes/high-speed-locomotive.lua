@@ -168,31 +168,6 @@ data:extend({
           lines_per_file = 4,
           shift = {0.0, -0.5},
         },
-        {
-          priority = "very-low",
-          flags = { "shadow" },
-          width = 253,
-          height = 212,
-          direction_count = 128,
-          draw_as_shadow = true,
-          allow_low_quality_rotation = true,
-          filenames =
-          {
-            "__base__/graphics/entity/diesel-locomotive/diesel-locomotive-shadow-01.png",
-            "__base__/graphics/entity/diesel-locomotive/diesel-locomotive-shadow-02.png",
-            "__base__/graphics/entity/diesel-locomotive/diesel-locomotive-shadow-03.png",
-            "__base__/graphics/entity/diesel-locomotive/diesel-locomotive-shadow-04.png",
-            "__base__/graphics/entity/diesel-locomotive/diesel-locomotive-shadow-05.png",
-            "__base__/graphics/entity/diesel-locomotive/diesel-locomotive-shadow-06.png",
-            "__base__/graphics/entity/diesel-locomotive/diesel-locomotive-shadow-07.png",
-            "__base__/graphics/entity/diesel-locomotive/diesel-locomotive-shadow-08.png"
-          },
-          line_length = 4,
-          lines_per_file = 8,
-          shift = {1, 0.3}
-        }
-      }
-    },
     wheels = standard_train_wheels,
     rail_category = "regular",
     stop_trigger =
