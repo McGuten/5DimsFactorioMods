@@ -154,25 +154,6 @@ data:extend({
                 lines_per_file = 4, 
                 shift = {0.42, -1.125},
             }, 
-            {
-                flags = { "shadow" }, 
-                priority = "very-low", 
-                width = 251, 
-                height = 188, 
-                back_equals_front = true, 
-                draw_as_shadow = true, 
-                direction_count = 64, 
-                filenames = 
-                {
-                    "__base__/graphics/entity/fluid-wagon/fluid-wagon-shadow-1.png", 
-                    "__base__/graphics/entity/fluid-wagon/fluid-wagon-shadow-2.png", 
-                    "__base__/graphics/entity/fluid-wagon/fluid-wagon-shadow-3.png", 
-                    "__base__/graphics/entity/fluid-wagon/fluid-wagon-shadow-4.png"
-                }, 
-                line_length = 4, 
-                lines_per_file = 8, 
-                shift = {0.875 + 0.013, 0.3125 + 0.077}, 
-            }
         }
     }, 
     wheels = standard_train_wheels, 
