@@ -35,17 +35,17 @@ data:extend({
     type = "offshore-pump",
     name = "5d-offshore-pump",
     icon = "__5dim_energy__/graphics/icon/icon_5d_offshore-pump_2_.png",
-	icon_size = 32,
+    icon_size = 32,
     flags = {"placeable-neutral", "player-creation", "filter-directions"},
-	collision_mask = { "ground-tile", "object-layer" },
-	fluid_box_tile_collision_test = { "ground-tile" },
-	adjacent_tile_collision_test = { "water-tile" },
+    collision_mask = { "ground-tile", "object-layer" },
+    fluid_box_tile_collision_test = { "ground-tile" },
+    adjacent_tile_collision_test = { "water-tile" },
     minable = {mining_time = 1, result = "5d-offshore-pump"},
-	--default offshore pump max_health is 150 now, it was set @ 80.
+    --default offshore pump max_health is 150 now, it was set @ 80.
     max_health = 150,
     corpse = "small-remnants",
     fluid = "water",
-	--default offshore pump has 30 impact resistance too.
+    --default offshore pump has 30 impact resistance too.
     resistances =
     {
       {
@@ -57,6 +57,7 @@ data:extend({
         percent = 30
       }
     },
+    fast_replaceable_group = "offshore-pump",
     collision_box = {{-0.6, -0.45}, {0.6, 0.3}},
     selection_box = {{-1, -1.49}, {1, 0.49}},
     fluid_box =
@@ -64,7 +65,7 @@ data:extend({
       base_area = 1,
       base_level = 1,
       pipe_covers = pipecoverspictures(),
-	  production_type = "output",
+      production_type = "output",
       pipe_connections =
       {
         {
@@ -73,10 +74,10 @@ data:extend({
         },
       },
     },
-	--pumping speed change vanila pump is 20, this one is 60
+    --pumping speed change vanila pump is 20, this one is 60
     pumping_speed = 60,
     tile_width = 1,
-	vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     picture =
     {
       north =
