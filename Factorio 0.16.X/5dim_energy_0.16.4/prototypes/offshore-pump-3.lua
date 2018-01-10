@@ -58,7 +58,7 @@ data:extend({
       }
     },
     fast_replaceable_group = "offshore-pump",
-    collision_box = {{-0.6, -0.45}, {0.6, 0.3}},
+    collision_box = {{-0.6, -1.05}, {0.6, 0.3}},
     selection_box = {{-1, -1.49}, {1, 0.49}},
     fluid_box =
     {
@@ -77,6 +77,7 @@ data:extend({
     --pumping speed change vanila pump is 20, this one is 100
     pumping_speed = 100,
     tile_width = 1,
+    tile_height = 1,	
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     picture =
     {
