@@ -35,17 +35,17 @@ data:extend({
     type = "offshore-pump",
     name = "5d-offshore-pump-2",
     icon = "__5dim_energy__/graphics/icon/icon_5d_offshore-pump_3_.png",
-	icon_size = 32,
+    icon_size = 32,
     flags = {"placeable-neutral", "player-creation", "filter-directions"},
-	collision_mask = { "ground-tile", "object-layer" },
-	fluid_box_tile_collision_test = { "ground-tile" },
-	adjacent_tile_collision_test = { "water-tile" },
+    collision_mask = { "ground-tile", "object-layer" },
+    fluid_box_tile_collision_test = { "ground-tile" },
+    adjacent_tile_collision_test = { "water-tile" },
     minable = {mining_time = 1, result = "5d-offshore-pump-2"},
-	--default offshore pump max_health is 150 now, it was set @ 80.
+    --default offshore pump max_health is 150 now, it was set @ 80.
     max_health = 150,
     corpse = "small-remnants",
     fluid = "water",
-	--default offshore pump has 30 impact resistance too.
+    --default offshore pump has 30 impact resistance too.
     resistances =
     {
       {
@@ -57,6 +57,7 @@ data:extend({
         percent = 30
       }
     },
+    fast_replaceable_group = "offshore-pump",
     collision_box = {{-0.6, -0.45}, {0.6, 0.3}},
     selection_box = {{-1, -1.49}, {1, 0.49}},
     fluid_box =
@@ -73,10 +74,10 @@ data:extend({
         },
       },
     },
-	--pumping speed change vanila pump is 20, this one is 100
+    --pumping speed change vanila pump is 20, this one is 100
     pumping_speed = 100,
     tile_width = 1,
-	vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     picture =
     {
       north =
@@ -100,7 +101,7 @@ data:extend({
       {
         filename = "__5dim_energy__/graphics/icon/icon_5d_offshore-pump_3.png",
         priority = "high",
-		---adjusted to fix detail spill from west image
+	---adjusted to fix detail spill from west image
         shift = {0.75, 0.65625},
         x = 320,
         width = 150,
@@ -110,7 +111,7 @@ data:extend({
       {
         filename = "__5dim_energy__/graphics/icon/icon_5d_offshore-pump_3.png",
         priority = "high",
-		---adjusted to fix detail clipping
+	---adjusted to fix detail clipping
         shift = {0.78125, 0.0625},
         x = 470,
         width = 170,
