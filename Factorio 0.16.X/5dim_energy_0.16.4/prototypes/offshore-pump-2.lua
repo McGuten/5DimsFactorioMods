@@ -117,15 +117,6 @@ data:extend({
         height = 102
       }
     },
-     placeable_position_visualization =
-    {
-      filename = "__core__/graphics/cursor-boxes-32x32.png",
-      priority = "extra-high-no-scale",
-      width = 64,
-      height = 64,
-      scale = 0.5,
-      x = 3*64
-    },
     circuit_wire_connection_points = circuit_connector_definitions["offshore-pump"].points,
     circuit_connector_sprites = circuit_connector_definitions["offshore-pump"].sprites,
     circuit_wire_max_distance = default_circuit_wire_max_distance
