@@ -108,7 +108,7 @@ data:extend({
     flags = {"placeable-neutral", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "5d-mk4-splitter"},
     icon_size = 32,
-    max_health = 80,
+    max_health = 200,
     corpse = "medium-remnants",
     resistances =
     {
@@ -131,7 +131,7 @@ data:extend({
     starting_bottom = mk4_belt_starting_bottom,
     starting_side = mk4_belt_starting_side,
     ending_patch = ending_patch_prototype,
-    fast_replaceable_group = "splitter",
+    fast_replaceable_group = "transport-belt",
     speed = 0.125,
     structure =
     {
