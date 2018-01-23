@@ -72,7 +72,7 @@ data:extend({
 		subgroup = "plates-industrial-ore",
 		order = "zz",
 		category = "industrial-furnace",
-		energy_required = 250,
+		energy_required = 90,
 		ingredients =
 		{
 			{ "iron-plate", 80},
