@@ -3,3 +3,8 @@ Version: 0.16.4
 Date: 06/01/2018
   News:
     - Added changelog.txt.
+---------------------------------------------------------------------------------------------------
+Version: 0.16.5
+Date: 23/01/2018
+  News:
+    - Adjusted chemical-plant mk2/3 collision to match balance changes.
