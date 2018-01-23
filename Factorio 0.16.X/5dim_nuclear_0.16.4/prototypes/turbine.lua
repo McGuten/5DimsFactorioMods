@@ -30,7 +30,7 @@ data:extend({
     minable = {mining_time = 1, result = "5d-steam-turbine-2"},
     icon_size = 32,
     max_health = 300,
-    fast_replaceable_group = "steam-turbine",
+    fast_replaceable_group = "steam-engine",
     corpse = "big-remnants",
     dying_explosion = "medium-explosion",
     effectivity = 1.1,
@@ -43,7 +43,6 @@ data:extend({
         percent = 70
       }
     },
-    fast_replaceable_group = "steam-engine",
     collision_box = {{-1.35, -2.35}, {1.35, 2.35}},
     selection_box = {{-1.5, -2.5}, {1.5, 2.5}},
     fluid_box =

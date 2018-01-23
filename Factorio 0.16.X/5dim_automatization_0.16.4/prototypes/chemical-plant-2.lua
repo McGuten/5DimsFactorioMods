@@ -39,7 +39,7 @@ data:extend({
   max_health = 300,
   corpse = "big-remnants",
   dying_explosion = "medium-explosion",
-  collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
+  collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
   selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
   fast_replaceable_group = "chemical-plant",
   module_specification =

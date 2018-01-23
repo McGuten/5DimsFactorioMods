@@ -3,3 +3,8 @@ Version: 0.16.5
 Date: 06/01/2018
   Changes:
     - Added changelog.txt.
+---------------------------------------------------------------------------------------------------
+Version: 0.16.6
+Date: 23/01/2018
+  Changes:
+    - Updated splitters to match vanilla scaling.
