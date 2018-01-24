@@ -47,6 +47,10 @@ data:extend({
       {
         type = "fire",
         percent = 70
+      },
+      {
+        type = "impact",
+        percent = 30
       }
     },
     collision_box = {{-1.35, -2.35}, {1.35, 2.35}},
@@ -101,6 +105,7 @@ data:extend({
         starting_vertical_speed = 0.05
       }
     },
+    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     working_sound =
     {
       sound =
