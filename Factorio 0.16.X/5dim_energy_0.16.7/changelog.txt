@@ -14,4 +14,4 @@ Date: 24/01/2018
   News:
     - Added circuit network connections and vehicle impact sound to accumulator mk2/3.
     - Tweaked accumulator mk3 discharge light color to match its animation.
-    
+    - Added circuit network connection and coloring to the lamp(5d-lamp).
