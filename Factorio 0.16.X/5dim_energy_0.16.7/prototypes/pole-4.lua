@@ -36,6 +36,7 @@ data:extend({
     icon_size = 32,
     max_health = 150,
     corpse = "medium-remnants",
+    track_coverage_during_build_by_moving = true,
     resistances = 
     {
       {
@@ -58,6 +59,7 @@ data:extend({
       direction_count = 4,
       shift = {1.4, -1.0}
     },
+    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     connection_points =
     {
       {
@@ -117,39 +119,11 @@ data:extend({
         }
       }
     },
-    copper_wire_picture =
-    {
-      filename = "__base__/graphics/entity/small-electric-pole/copper-wire.png",
-      priority = "extra-high-no-scale",
-      width = 224,
-      height = 46
-    },
-    green_wire_picture =
-    {
-      filename = "__base__/graphics/entity/small-electric-pole/green-wire.png",
-      priority = "extra-high-no-scale",
-      width = 224,
-      height = 46
-    },
     radius_visualisation_picture =
     {
       filename = "__base__/graphics/entity/small-electric-pole/electric-pole-radius-visualization.png",
       width = 12,
       height = 12
     },
-    red_wire_picture =
-    {
-      filename = "__base__/graphics/entity/small-electric-pole/red-wire.png",
-      priority = "extra-high-no-scale",
-      width = 224,
-      height = 46
-    },
-    wire_shadow_picture =
-    {
-      filename = "__base__/graphics/entity/small-electric-pole/wire-shadow.png",
-      priority = "extra-high-no-scale",
-      width = 224,
-      height = 46
-    }
   },
 })
