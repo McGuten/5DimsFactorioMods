@@ -147,12 +147,11 @@ data:extend({
     starting_bottom = mk5_belt_starting_bottom,
     starting_side = mk5_belt_starting_side,
     ending_patch = ending_patch_prototype,
-    ending_patch = ending_patch_prototype,
     fast_replaceable_group = "transport-belt",
     speed = 0.15,
     connector_frame_sprites = transport_belt_connector_frame_sprites,
-    circuit_connector_sprites = transport_belt_circuit_connector_sprites,
-    circuit_wire_connection_point = transport_belt_circuit_wire_connection_point,
+    circuit_wire_connection_points = circuit_connector_definitions["belt"].points,
+    circuit_connector_sprites = circuit_connector_definitions["belt"].sprites,
     circuit_wire_max_distance = transport_belt_circuit_wire_max_distance
   },
 })

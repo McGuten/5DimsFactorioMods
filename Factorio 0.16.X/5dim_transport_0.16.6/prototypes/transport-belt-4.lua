@@ -150,8 +150,8 @@ data:extend({
     fast_replaceable_group = "transport-belt",
     speed = 0.12,
     connector_frame_sprites = transport_belt_connector_frame_sprites,
-    circuit_connector_sprites = transport_belt_circuit_connector_sprites,
-    circuit_wire_connection_point = transport_belt_circuit_wire_connection_point,
+    circuit_wire_connection_points = circuit_connector_definitions["belt"].points,
+    circuit_connector_sprites = circuit_connector_definitions["belt"].sprites,
     circuit_wire_max_distance = transport_belt_circuit_wire_max_distance
   },
 })
