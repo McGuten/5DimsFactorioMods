@@ -199,7 +199,6 @@ data:extend({
         animation_speed = 0.3,
       },
     },
-    repair_pack = "5d-repair-pack-2",
     working_sound = flying_robot_sounds(),
     cargo_centered = {0.0, 0.2},
     construction_vector = {0.30, 0.22},
