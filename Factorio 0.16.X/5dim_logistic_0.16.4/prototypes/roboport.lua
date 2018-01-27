@@ -115,6 +115,7 @@ data:extend({
       scale = 1.5,
       animation_speed = 0.5
     },
+    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     working_sound =
     {
       sound = { filename = "__base__/sound/roboport-working.ogg", volume = 0.6 },
@@ -123,18 +124,8 @@ data:extend({
     recharging_light = {intensity = 0.4, size = 5},
     request_to_open_door_timeout = 15,
     spawn_and_station_height = -0.1,
-    radius_visualisation_picture =
-    {
-      filename = "__base__/graphics/entity/roboport/roboport-radius-visualization.png",
-      width = 12,
-      height = 12
-    },
-    construction_radius_visualisation_picture =
-    {
-      filename = "__base__/graphics/entity/roboport/roboport-construction-radius-visualization.png",
-      width = 12,
-      height = 12
-    },
+    draw_logistic_radius_visualization = true,
+    draw_construction_radius_visualization = true,
     open_door_trigger_effect =
     {
       {
@@ -148,19 +139,6 @@ data:extend({
         type = "play-sound",
         sound = { filename = "__base__/sound/roboport-door.ogg", volume = 0.75 }
       },
-    },
-    circuit_wire_connection_point =
-    {
-      shadow =
-      {
-        red = {1.17188, 1.98438},
-        green = {1.04688, 2.04688}
-      },
-      wire =
-      {
-        red = {0.78125, 1.375},
-        green = {0.78125, 1.53125}
-      }
     },
 
     circuit_wire_connection_point = circuit_connector_definitions["roboport"].points,
