@@ -44,6 +44,7 @@ data:extend({
     logistic_slots_count = 12,
     open_sound = { filename = "__base__/sound/metallic-chest-open.ogg", volume=0.65 },
     close_sound = { filename = "__base__/sound/metallic-chest-close.ogg", volume = 0.7 },
+    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     picture =
     {
       filename = "__5dim_logistic__/graphics/icon/5d_icon_logistic-chest-requester_2.png",
@@ -52,6 +53,8 @@ data:extend({
       height = 32,
       shift = {0.1, 0}
     },
+    circuit_wire_connection_point = circuit_connector_definitions["chest"].points,
+    circuit_connector_sprites = circuit_connector_definitions["chest"].sprites,
     circuit_wire_max_distance = 7.5
   },
 })
