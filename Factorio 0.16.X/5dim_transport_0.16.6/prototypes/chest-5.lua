@@ -1,3 +1,11 @@
+--WireConnectorDefinition
+circuit_connector_definitions["5d-iron-chest-mk2-3"] = circuit_connector_definitions.create
+(
+  universal_connector_template,
+  {
+    { variation = 26, main_offset = util.by_pixel(0, 85), shadow_offset = util.by_pixel(5, 85), show_shadow = true },
+  }
+)
 data:extend({
 -- Item
   {
@@ -55,7 +63,10 @@ data:extend({
       priority = "extra-high",
       width = 345,
       height = 223,
-        shift = {2.5, 0.4}
-    }
+      shift = {2.5, 0.4}
+    },
+    circuit_wire_connection_point = circuit_connector_definitions["5d-iron-chest-mk2-3"].points,
+    circuit_connector_sprites = circuit_connector_definitions["5d-iron-chest-mk2-3"].sprites,
+    circuit_wire_max_distance = default_circuit_wire_max_distance
   },
 })

@@ -1,3 +1,11 @@
+--WireConnectorDefinition
+circuit_connector_definitions["5d-iron-chest-mk2-2"] = circuit_connector_definitions.create
+(
+  universal_connector_template,
+  {
+    { variation = 26, main_offset = util.by_pixel(0, 21), shadow_offset = util.by_pixel(5, 21), show_shadow = true },
+  }
+)
 data:extend({
 -- Item
   {
@@ -62,9 +70,12 @@ data:extend({
     {
       filename = "__5dim_transport__/graphics/icon/icon_5d_chest6.png",
       priority = "extra-high",
-      height = 96,
       width = 34,
+      height = 96,
       shift = {0.0, 0.4}
-    }
+    },
+    circuit_wire_connection_point = circuit_connector_definitions["5d-iron-chest-mk2-2"].points,
+    circuit_connector_sprites = circuit_connector_definitions["5d-iron-chest-mk2-2"].sprites,
+    circuit_wire_max_distance = default_circuit_wire_max_distance
   },
 })
