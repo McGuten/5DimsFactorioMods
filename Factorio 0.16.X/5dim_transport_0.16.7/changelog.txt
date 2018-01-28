@@ -8,3 +8,8 @@ Version: 0.16.6
 Date: 23/01/2018
   Changes:
     - Updated splitters to match vanilla scaling.
+---------------------------------------------------------------------------------------------------
+Version: 0.16.7
+Date: 28/01/2018
+  Changes:
+    - Added circuit wire connections to chests and belts
