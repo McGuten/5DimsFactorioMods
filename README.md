@@ -11,7 +11,7 @@
 
 ## Description
 
-This mod has **21 modules** and we recommend use all in your game.
+This mod is a **total conversion** and it has **21 modules** and we recommend use all in your game.
 
 ### Mod list
 #### Core module
