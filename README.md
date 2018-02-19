@@ -58,7 +58,6 @@ This mod has **21 modules** and we recommend use all in your game.
   - **Vehicle**.
     - Add air plane, truck and boat also active grids to all vehicles (of any mod).
 
-
 ## Translations
 1. If you want to translate the mod to other lang you should use the follow template
 2. [5Dim's Locale > locale > en.example](Factorio%200.16.X/5dim_locale_0.16.6/locale/en.example)
@@ -86,3 +85,9 @@ for _, tech_name in pairs(tech) do
   end
 end
 ```
+
+
+## Images
+
+![core](core-settings.png)
+![mod](mod-settings.png)
