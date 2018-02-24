@@ -25,7 +25,9 @@ name = "5d-roboport-2"
   recipe.ingredients =
     {
       {"roboport", 1},
-      {"processing-unit", 20},
+      {"steel-plate", 20},
+      {"iron-gear-wheel", 20},
+      {"advanced-circuit", 20},
     }
 
   --Entity

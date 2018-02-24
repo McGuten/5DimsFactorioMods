@@ -25,6 +25,9 @@ name = "5d-roboport-4"
   recipe.ingredients =
     {
       {"5d-roboport-3", 1},
+      {"steel-plate", 20},
+      {"iron-gear-wheel", 20},
+      {"advanced-circuit", 20},
       {"processing-unit", 20},
     }
 

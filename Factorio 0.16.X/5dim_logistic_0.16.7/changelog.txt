@@ -15,5 +15,10 @@ Date: 27/01/2018
 Version: 0.16.6
 Date: 22/02/2018
   News:
-    - remake roboports.
+    - Remake roboports.
     - Added description.
+---------------------------------------------------------------------------------------------------
+Version: 0.16.7
+Date: 24/02/2018
+  News:
+    - remake recipes for roboports.
