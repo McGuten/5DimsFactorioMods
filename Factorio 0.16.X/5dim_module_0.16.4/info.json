@@ -1,0 +1,11 @@
+{
+  "name": "5dim_module",
+  "version": "0.16.4",
+  "factorio_version": "0.16",
+  "title": "5Dim's mod - Module",
+  "author": "5Dim",
+  "contact": "mcguten.videos@gmail.com",
+  "homepage": "https://mods.factorio.com/mods",
+  "description": "Modules for 5dim's mod -> Add pollution module, add tier 4 and 5 of all modules and make welded modules (you can combine 2 modules)",
+  "dependencies": ["5dim_core >= 0.16.6"]
+}

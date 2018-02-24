@@ -1,6 +1,0 @@
----------------------------------------------------------------------------------------------------
-Version: 0.16.4
-Date: 06/01/2018
-  News:
-    - New release from the mod, Updated from Folk mod.
-    - Added changelog.txt.
