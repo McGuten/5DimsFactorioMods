@@ -31,7 +31,7 @@ data:extend({
     type = "car",
     name = "5d-truck",
     icon = "__5dim_vehicle__/graphics/icon/truck/truck.png",
-    flags = {"pushable", "placeable-neutral", "player-creation","placeable-off-grid", "not-on-map"},
+    flags = {"pushable", "placeable-neutral", "player-creation","placeable-off-grid"},
     minable = {mining_time = 1, result = "5d-truck"},
     icon_size = 32,
     max_health = 800,

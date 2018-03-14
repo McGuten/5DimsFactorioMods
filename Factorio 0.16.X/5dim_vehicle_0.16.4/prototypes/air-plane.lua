@@ -31,7 +31,7 @@ data:extend({
     type = "car",
     name = "5d-air-plane",
     icon = "__5dim_vehicle__/graphics/icon/air-plane/air-plane.png",
-    flags = {"pushable", "placeable-neutral", "player-creation","placeable-off-grid", "not-on-map"},
+    flags = {"pushable", "placeable-neutral", "player-creation","placeable-off-grid"},
     minable = {mining_time = 1, result = "5d-air-plane"},
     icon_size = 32,
     max_health = 150,
