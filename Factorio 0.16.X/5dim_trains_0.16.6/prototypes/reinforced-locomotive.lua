@@ -30,7 +30,7 @@ data:extend({
   type = "locomotive", 
   name = "5d-locomotive-reinforced", 
   icon = "__5dim_trains__/graphics/reinforced/icon.png", 
-  flags = {"placeable-neutral", "player-creation", "placeable-off-grid", "not-on-map"}, 
+  flags = {"placeable-neutral", "player-creation", "placeable-off-grid"}, 
   minable = {mining_time = 1, result = "5d-locomotive-reinforced"}, 
   icon_size = 32,
   mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"}, 

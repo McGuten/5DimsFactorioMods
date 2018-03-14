@@ -30,7 +30,7 @@ data:extend({
     type = "cargo-wagon", 
     name = "5d-cargo-wagon-3", 
     icon = "__5dim_trains__/graphics/cargo-wagon3.png", 
-    flags = {"placeable-neutral", "player-creation", "placeable-off-grid", "not-on-map"}, 
+    flags = {"placeable-neutral", "player-creation", "placeable-off-grid"}, 
     icon_size = 32,
     inventory_size = 120, 
     fast_replaceable_group = "cargo-wagon",
