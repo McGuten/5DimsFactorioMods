@@ -32,7 +32,7 @@ data:extend({
     type = "fluid-wagon", 
     name = "5d-fluid-wagon-3", 
     icon = "__5dim_trains__/graphics/fluid-wagon3.png", 
-    flags = {"placeable-neutral", "player-creation", "placeable-off-grid", "not-on-map"}, 
+    flags = {"placeable-neutral", "player-creation", "placeable-off-grid"}, 
     minable = {mining_time = 1, result = "5d-fluid-wagon-3"}, 
     icon_size = 32,
     mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"}, 

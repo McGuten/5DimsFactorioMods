@@ -30,7 +30,7 @@ data:extend({
   type = "locomotive", 
   name = "5d-locomotive-hs", 
   icon = "__5dim_trains__/graphics/diesel-locomotive2.png", 
-  flags = {"placeable-neutral", "player-creation", "placeable-off-grid", "not-on-map"}, 
+  flags = {"placeable-neutral", "player-creation", "placeable-off-grid"}, 
   minable = {mining_time = 1, result = "5d-locomotive-hs"}, 
   icon_size = 32,
   mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"}, 
