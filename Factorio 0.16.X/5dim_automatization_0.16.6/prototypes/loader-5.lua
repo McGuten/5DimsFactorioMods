@@ -76,7 +76,7 @@ data:extend({
     type = "item",
     name = "5d-loader-5",
     icon = "__5dim_automatization__/graphics/icon/loader-5_.png",
-    flags = {"goes-to-quickbar", "hidden"},
+    flags = {"goes-to-quickbar"},
     icon_size = 32,
     subgroup = "transport-loader",
     order = "e",
