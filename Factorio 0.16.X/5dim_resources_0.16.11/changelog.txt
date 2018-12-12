@@ -23,3 +23,8 @@ Version: 0.16.10
 Date: 22/02/2018
   Changes:
     - Added description.
+---------------------------------------------------------------------------------------------------
+Version: 0.16.11
+Date: 21/08/2018
+  Changes:
+    - Relocated mashers fire animations to match their openings.

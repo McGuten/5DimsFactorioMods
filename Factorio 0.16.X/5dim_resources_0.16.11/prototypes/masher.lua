@@ -2,38 +2,37 @@ data:extend({
 -- Item
 	{
 		type = "item",
-		name = "5d-masher-2",
-		icon = "__5dim_resources__/graphics/icon/masher2_.png",
+		name = "5d-masher",
+		icon = "__5dim_resources__/graphics/icon/icon_5d_masher_.png",
 		flags = {"goes-to-quickbar"},
     icon_size = 32,
 		subgroup = "masher",
-		order = "b",
-		place_result = "5d-masher-2",
+		order = "a",
+		place_result = "5d-masher",
 		stack_size = 50
 	},
 
 --Recipe
 	{
 		type = "recipe",
-		name = "5d-masher-2",
+		name = "5d-masher",
 		enabled = "false",
 		ingredients = 
 		{
-			{"iron-plate",50},
-			{"stone-brick",20},
-			{"5d-masher",1},
-			{"advanced-circuit",10},
+			{"iron-plate",20},
+			{"stone-brick",5},
+			{"electronic-circuit",2},
 		},
-		result = "5d-masher-2"
+		result = "5d-masher"
 	},
 
 --Entity
     {
 	type = "furnace",
-    name = "5d-masher-2",
-    icon = "__5dim_resources__/graphics/icon/masher2_.png",
+    name = "5d-masher",
+    icon = "__5dim_resources__/graphics/icon/icon_5d_masher_.png",
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
-    minable = {hardness = 0.2, mining_time = 0.5, result = "5d-masher-2"},
+    minable = {hardness = 0.2, mining_time = 0.5, result = "5d-masher"},
     icon_size = 32,
     max_health = 150,
     corpse = "big-remnants",
@@ -55,7 +54,7 @@ data:extend({
 	selection_box = {{-0.8, -1}, {0.8, 1}},
 	animation =
     {
-      filename = "__5dim_resources__/graphics/icon/masher2.png",
+      filename = "__5dim_resources__/graphics/icon/icon_5d_masher.png",
       priority = "high",
       width = 91,
       height = 69,
@@ -76,7 +75,7 @@ data:extend({
           width = 36,
           height = 19,
           frame_count = 12,
-          shift = { 0.0625, 0.375}
+          shift = { -0.0625, 0.65625}
         },
         light = {intensity = 1, size = 1}
       }
@@ -84,19 +83,19 @@ data:extend({
     crafting_categories = {"mashering"},
     module_specification =
     {
-      module_slots = 4
+      module_slots = 3
     },
 	allowed_effects = {"consumption", "speed", "productivity", "pollution"},
 	result_inventory_size = 1,
 	source_inventory_size = 1,
-    crafting_speed = 3,
+    crafting_speed = 2,
     energy_source =
     {
       type = "electric",
       usage_priority = "secondary-input",
       emissions = 0.025
     },
-    energy_usage = "600kW",
+    energy_usage = "360kW",
     ingredient_count = 1,
     working_sound =
     {
