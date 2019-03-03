@@ -1,0 +1,11 @@
+{
+    "name": "5dim_energy",
+    "version": "0.17.0",
+    "factorio_version": "0.17",
+    "title": "5Dim's mod - Energy",
+    "author": "5Dim",
+    "contact": "mcguten.videos@gmail.com",
+    "homepage": "https://mods.factorio.com/mods",
+    "description": "Energy for 5dim's mod -> Add 2 tier of accumulators, boilers, steam engine, solar panel, pumps, new electric poles and a new big lamp",
+    "dependencies": ["5dim_core >= 0.17.0"]
+}

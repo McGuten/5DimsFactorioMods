@@ -1,0 +1,33 @@
+-- data:extend({
+--   {
+--     type = "technology",
+--     name = "cannon-shell-speed-6",
+--    icon = "__base__/graphics/technology/cannon-speed.png",
+--     icon_size = 128, 
+--     effects =
+--     {
+--       {
+--         type = "gun-speed",
+--         ammo_category = "cannon-shell",
+--         modifier = 1
+--       }
+--     },
+--     prerequisites = {"cannon-shell-speed-5"},
+--     unit =
+--     {
+--       count_formula = "200*(L)",
+--       ingredients =
+--       {
+--         {"military-science-pack", 1},
+--         {"automation-science-pack", 1},
+--         {"logistic-science-pack", 1},
+--         {"chemical-science-pack", 1},
+--         {"utility-science-pack", 1}
+--       },
+--       time = 60
+--     },
+--     max_level = "infinite",
+--     upgrade = true,
+--     order = "e-k-k"
+--   }
+-- })
