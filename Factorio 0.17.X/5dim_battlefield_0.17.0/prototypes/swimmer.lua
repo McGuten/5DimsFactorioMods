@@ -54,8 +54,8 @@ data:extend(
         collision_box = {{ - 3.2, - 2.2}, {2.2, 2.2}}, 
         selection_box = {{ - 3.5, - 2.5}, {2.5, 2.5}}, 
 -- in ticks per 1 pu
-pollution_absorbtion_absolute = 20, 
-pollution_absorbtion_proportional = 0.01, 
+pollution_absorption_absolute = 20, 
+pollution_absorption_proportional = 0.01, 
 corpse = "biter-spawner-corpse", 
 dying_explosion = "blood-explosion-huge", 
 max_count_of_owned_units = 7, 
