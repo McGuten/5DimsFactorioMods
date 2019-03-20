@@ -3,39 +3,40 @@ data:extend(
     -- Item
     {
       type = "item",
-      name = "5d-mk5-transport-belt-to-ground-50",
-      icon = "__5dim_transport__/graphics/icon/icon_5d_ground-structure_5_50_.png",
+      name = "5d-mk5-transport-belt-to-ground",
+      icon = "__5dim_transport__/graphics/icon/icon_5d_ground-structure_5_.png",
       -- flags = {"goes-to-quickbar"},
       icon_size = 32,
-      subgroup = "transport-ground-50",
+      subgroup = "transport-ground",
       order = "e",
-      place_result = "5d-mk5-transport-belt-to-ground-50",
+      place_result = "5d-mk5-transport-belt-to-ground",
       stack_size = 50
     },
     --Recipe
     {
       type = "recipe",
-      name = "5d-mk5-transport-belt-to-ground-50",
+      name = "5d-mk5-transport-belt-to-ground",
+      icon_size = 32,
       enabled = "false",
       energy_required = 1,
       ingredients = {
         {"iron-plate", 10},
-        {"5d-mk5-transport-belt", 50}
+        {"5d-mk5-transport-belt", 5}
       },
       result_count = 2,
-      result = "5d-mk5-transport-belt-to-ground-50"
+      result = "5d-mk5-transport-belt-to-ground"
     },
     --Entity
     {
       type = "underground-belt",
-      name = "5d-mk5-transport-belt-to-ground-50",
-      icon = "__5dim_transport__/graphics/icon/icon_5d_ground-structure_5_50_.png",
+      name = "5d-mk5-transport-belt-to-ground",
+      icon = "__5dim_transport__/graphics/icon/icon_5d_ground-structure_5_.png",
       flags = {"placeable-neutral", "player-creation", "fast-replaceable-no-build-while-moving"},
-      minable = {hardness = 0.2, mining_time = 0.5, result = "5d-mk5-transport-belt-to-ground-50"},
+      minable = {hardness = 0.2, mining_time = 0.5, result = "5d-mk5-transport-belt-to-ground"},
       icon_size = 32,
       max_health = 60,
       corpse = "small-remnants",
-      max_distance = 50,
+      max_distance = 13,
       underground_sprite = {
         filename = "__core__/graphics/arrows/underground-lines.png",
         priority = "high",
@@ -67,7 +68,7 @@ data:extend(
       animation_speed_coefficient = 32,
       belt_animation_set = express_belt_animation_set,
       fast_replaceable_group = "transport-belt",
-      speed = 0.09375,
+      speed = 0.15,
       structure = {
         direction_in = {
           sheet = {

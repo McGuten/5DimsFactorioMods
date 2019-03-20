@@ -3,35 +3,35 @@ data:extend(
     -- Item
     {
       type = "item",
-      name = "5d-mk4-transport-belt-to-ground-30",
-      icon = "__5dim_transport__/graphics/icon/icon_5d_ground-structure_4_30_.png",
+      name = "5d-mk5-transport-belt-to-ground-30",
+      icon = "__5dim_transport__/graphics/icon/icon_5d_ground-structure_5_30_.png",
       -- flags = {"goes-to-quickbar"},
       icon_size = 32,
       subgroup = "transport-ground-30",
-      order = "d",
-      place_result = "5d-mk4-transport-belt-to-ground-30",
+      order = "e",
+      place_result = "5d-mk5-transport-belt-to-ground-30",
       stack_size = 50
     },
     --Recipe
     {
       type = "recipe",
-      name = "5d-mk4-transport-belt-to-ground-30",
+      name = "5d-mk5-transport-belt-to-ground-30",
       enabled = "false",
       energy_required = 1,
       ingredients = {
         {"iron-plate", 10},
-        {"5d-mk4-transport-belt", 30}
+        {"5d-mk5-transport-belt", 30}
       },
       result_count = 2,
-      result = "5d-mk4-transport-belt-to-ground-30"
+      result = "5d-mk5-transport-belt-to-ground-30"
     },
     --Entity
     {
       type = "underground-belt",
-      name = "5d-mk4-transport-belt-to-ground-30",
-      icon = "__5dim_transport__/graphics/icon/icon_5d_ground-structure_4_30_.png",
+      name = "5d-mk5-transport-belt-to-ground-30",
+      icon = "__5dim_transport__/graphics/icon/icon_5d_ground-structure_5_30_.png",
       flags = {"placeable-neutral", "player-creation", "fast-replaceable-no-build-while-moving"},
-      minable = {hardness = 0.2, mining_time = 0.5, result = "5d-mk4-transport-belt-to-ground-30"},
+      minable = {hardness = 0.2, mining_time = 0.5, result = "5d-mk5-transport-belt-to-ground-30"},
       icon_size = 32,
       max_health = 60,
       corpse = "small-remnants",
@@ -67,7 +67,7 @@ data:extend(
       animation_speed_coefficient = 32,
       belt_animation_set = express_belt_animation_set,
       fast_replaceable_group = "transport-belt",
-      speed = 0.09375,
+      speed = 0.15,
       structure = {
         direction_in = {
           sheet = {

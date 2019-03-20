@@ -1,11 +1,11 @@
 {
     "name": "5dim_battlefield",
-    "version": "0.17.2",
+    "version": "0.17.1",
     "factorio_version": "0.17.13",
     "title": "5Dim's mod - Battlefield",
     "author": "5Dim",
     "contact": "mcguten.videos@gmail.com",
     "homepage": "https://mods.factorio.com/mods",
     "description": "Enemies for 5dim's mod -> Add 2 new laser turret, 2 new gun turret, new electrical turret, new tier wall and gates and a lot of new biters, spitter and spawners, be carefull",
-    "dependencies": ["5dim_core >= 0.17.0"]
+    "dependencies": ["5dim_core >= 0.17.2"]
 }
