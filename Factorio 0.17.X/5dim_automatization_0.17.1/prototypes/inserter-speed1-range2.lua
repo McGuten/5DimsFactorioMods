@@ -1,46 +1,20 @@
 data:extend({
--- Item
+--Entity (incluido en el juego)
   {
-    type = "item",
-    name = "5d-fast-inserter-right-90d",
-    icon = "__5dim_automatization__/graphics/icon/icon_5d_inserter_2d21f.png",
-    -- flags = {"goes-to-quickbar"},
-    icon_size = 32,
-    subgroup = "inserters-right",
-    order = "c",
-    place_result = "5d-fast-inserter-right-90d",
-    stack_size = 50
-  },
-
---Recipe
-  {
-    type = "recipe",
-    name = "5d-fast-inserter-right-90d",
-    enabled ="false",
-    ingredients = 
-    {
-      {"fast-inserter", 1},
-      {"electronic-circuit", 5}
-    },
-    result = "5d-fast-inserter-right-90d"
-  },
-
---Entity
-{
     type = "inserter",
-    name = "5d-fast-inserter-right-90d",
-    icon = "__5dim_automatization__/graphics/icon/icon_5d_inserter_2i21f.png",
+    name = "long-handed-inserter",
+    icon = "__base__/graphics/icons/long-handed-inserter.png",
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
+    minable = {hardness = 0.2, mining_time = 0.5, result = "long-handed-inserter"},
     icon_size = 32,
-    minable =
-    {
-      hardness = 0.2,
-      mining_time = 0.5,
-      result = "5d-fast-inserter-right-90d"
-    },
+    rotation_speed = 0.014,
+    extension_speed = 0.035,
+    pickup_position = {0, -2},
+    insert_position = {0, 2.2},
+    hand_size = 2.5,
     max_health = 40,
     corpse = "small-remnants",
-    resistances =
+    resistances = 
     {
       {
         type = "fire",
@@ -49,18 +23,15 @@ data:extend({
     },
     collision_box = {{-0.15, -0.15}, {0.15, 0.15}},
     selection_box = {{-0.4, -0.35}, {0.4, 0.45}},
-    pickup_position = {-1, 0},
-    insert_position = {0, 1.2},
     energy_per_movement = "5KJ",
     energy_per_rotation = "5KJ",
-    rotation_speed = 0.035,
     energy_source =
     {
       type = "electric",
       usage_priority = "secondary-input",
       drain = "0.4kW"
     },
-    extension_speed = 0.07,
+    extension_speed = 0.04,
     fast_replaceable_group = "inserter",
     working_sound =
     {
@@ -68,36 +39,36 @@ data:extend({
       sound =
       {
         {
-          filename = "__base__/sound/inserter-fast-1.ogg",
+          filename = "__base__/sound/inserter-long-handed-1.ogg",
           volume = 0.75
         },
         {
-          filename = "__base__/sound/inserter-fast-2.ogg",
+          filename = "__base__/sound/inserter-long-handed-2.ogg",
           volume = 0.75
         },
         {
-          filename = "__base__/sound/inserter-fast-3.ogg",
+          filename = "__base__/sound/inserter-long-handed-3.ogg",
           volume = 0.75
         },
         {
-          filename = "__base__/sound/inserter-fast-4.ogg",
+          filename = "__base__/sound/inserter-long-handed-4.ogg",
           volume = 0.75
         },
         {
-          filename = "__base__/sound/inserter-fast-5.ogg",
+          filename = "__base__/sound/inserter-long-handed-5.ogg",
           volume = 0.75
         }
       }
     },
     hand_base_picture =
     {
-      filename = "__base__/graphics/entity/fast-inserter/fast-inserter-hand-base.png",
+      filename = "__base__/graphics/entity/inserter/inserter-hand-base.png",
       priority = "extra-high",
       width = 8,
-      height = 34,
+      height = 33,
       hr_version =
       {
-        filename = "__base__/graphics/entity/fast-inserter/hr-fast-inserter-hand-base.png",
+        filename = "__base__/graphics/entity/inserter/hr-inserter-hand-base.png",
         priority = "extra-high",
         width = 32,
         height = 136,
@@ -106,13 +77,13 @@ data:extend({
     },
     hand_closed_picture =
     {
-      filename = "__base__/graphics/entity/fast-inserter/fast-inserter-hand-closed.png",
+      filename = "__base__/graphics/entity/inserter/inserter-hand-closed.png",
       priority = "extra-high",
       width = 18,
       height = 41,
       hr_version =
       {
-        filename = "__base__/graphics/entity/fast-inserter/hr-fast-inserter-hand-closed.png",
+        filename = "__base__/graphics/entity/inserter/hr-inserter-hand-closed.png",
         priority = "extra-high",
         width = 72,
         height = 164,
@@ -121,13 +92,13 @@ data:extend({
     },
     hand_open_picture =
     {
-      filename = "__base__/graphics/entity/fast-inserter/fast-inserter-hand-open.png",
+      filename = "__base__/graphics/entity/inserter/inserter-hand-open.png",
       priority = "extra-high",
       width = 18,
       height = 41,
       hr_version =
       {
-        filename = "__base__/graphics/entity/fast-inserter/hr-fast-inserter-hand-open.png",
+        filename = "__base__/graphics/entity/inserter/hr-inserter-hand-open.png",
         priority = "extra-high",
         width = 72,
         height = 164,
@@ -179,18 +150,20 @@ data:extend({
         scale = 0.25
       }
     },
+    pickup_position = {0, -2},
+    insert_position = {0, 2.2},
     platform_picture =
     {
       sheet =
       {
-        filename = "__base__/graphics/entity/fast-inserter/fast-inserter-platform.png",
+        filename = "__base__/graphics/entity/inserter/inserter-platform.png",
         priority = "extra-high",
         width = 46,
         height = 46,
         shift = {0.09375, 0},
         hr_version =
         {
-          filename = "__base__/graphics/entity/fast-inserter/hr-fast-inserter-platform.png",
+          filename = "__base__/graphics/entity/inserter/hr-inserter-platform.png",
           priority = "extra-high",
           width = 105,
           height = 79,

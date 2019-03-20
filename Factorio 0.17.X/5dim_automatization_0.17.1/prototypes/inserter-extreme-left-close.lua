@@ -2,48 +2,44 @@ data:extend({
 -- Item
   {
     type = "item",
-    name = "5d-inserter-speed3-range1-close",
-    icon = "__5dim_automatization__/graphics/icon/icon_5d_inserter_3c31c.png",
+    name = "5d-extreme-inserter-left-90d-close",
+    icon = "__5dim_automatization__/graphics/icon/icon_5d_inserter_2i21c.png",
     -- flags = {"goes-to-quickbar"},
     icon_size = 32,
-    subgroup = "inserters-speed3",
-    order = "b",
-    place_result = "5d-inserter-speed3-range1-close",
+    subgroup = "inserters-left",
+    order = "f",
+    place_result = "5d-extreme-inserter-left-90d-close",
     stack_size = 50
   },
 
 --Recipe
   {
     type = "recipe",
-    name = "5d-inserter-speed3-range1-close",
+    name = "5d-extreme-inserter-left-90d-close",
     enabled ="false",
-    ingredients =
+    ingredients = 
     {
-      {"5d-inserter-speed3-range1", 1},
-      {"electronic-circuit", 5},
-      {"iron-gear-wheel", 5},
+      {"5d-extreme-inserter-left-90d", 1},
+      {"iron-gear-wheel", 10}
     },
-    result = "5d-inserter-speed3-range1-close"
+    result = "5d-extreme-inserter-left-90d-close"
   },
 
 --Entity
-   {
+{
     type = "inserter",
-    name = "5d-inserter-speed3-range1-close",
-    icon = "__base__/graphics/icons/fast-inserter.png",
+    name = "5d-extreme-inserter-left-90d-close",
+    icon = "__5dim_automatization__/graphics/icon/icon_5d_inserter_2i21f.png",
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     icon_size = 32,
-    rotation_speed = 0.070,
-    extension_speed = 0.035,
-    pickup_position = {0, -1},
-    insert_position = {0, 0.8},
-    hand_size = 1.5,
     minable =
     {
       hardness = 0.2,
       mining_time = 0.5,
-      result = "5d-inserter-speed3-range1-close"
+      result = "5d-extreme-inserter-left-90d-close"
     },
+    rotation_speed = 0.070,
+    extension_speed = 0.035,
     max_health = 40,
     corpse = "small-remnants",
     resistances =
@@ -55,6 +51,8 @@ data:extend({
     },
     collision_box = {{-0.15, -0.15}, {0.15, 0.15}},
     selection_box = {{-0.4, -0.35}, {0.4, 0.45}},
+    pickup_position = {1, 0},
+    insert_position = {0, 0.8},
     energy_per_movement = "5KJ",
     energy_per_rotation = "5KJ",
     energy_source =
@@ -182,8 +180,6 @@ data:extend({
         scale = 0.25
       }
     },
-    pickup_position = {0, -1},
-    insert_position = {0, 1.2},
     platform_picture =
     {
       sheet =

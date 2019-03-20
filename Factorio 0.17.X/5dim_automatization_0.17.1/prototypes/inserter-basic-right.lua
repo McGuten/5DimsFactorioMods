@@ -161,8 +161,6 @@ data:extend(
           scale = 0.25
         }
       },
-      pickup_position = {0, -1},
-      insert_position = {0, 1.2},
       platform_picture = {
         sheet = {
           filename = "__base__/graphics/entity/inserter/inserter-platform.png",

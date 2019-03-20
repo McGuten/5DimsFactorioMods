@@ -71,7 +71,7 @@ end
 
 --Mining speed
 if settings.startup["5d-mining-speed"] then
-   data.raw["player"]["player"].mining_speed = settings.startup["5d-mining-speed"].value
+   data.raw["player"]["player"].mining_speed = data.raw["player"]["player"].mining_speed * settings.startup["5d-mining-speed"].value
 end
 
 --Mining range

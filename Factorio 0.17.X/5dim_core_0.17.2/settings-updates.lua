@@ -47,8 +47,8 @@ data:extend(
             name = "5d-mining-speed",
             order = "bc",
             setting_type = "startup",
-            default_value = 0.01,
-            minimum_value = 0.001,
+            default_value = 1,
+            minimum_value = 0.01,
             maximum_value = 1000,
             localised_name = "[5Dim's mods] Mining speed (Multiplier)"
         },

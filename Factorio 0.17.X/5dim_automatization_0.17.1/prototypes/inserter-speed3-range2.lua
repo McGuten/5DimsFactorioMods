@@ -2,44 +2,48 @@ data:extend({
 -- Item
   {
     type = "item",
-    name = "5d-extreme-inserter-left-90d-close",
-    icon = "__5dim_automatization__/graphics/icon/icon_5d_inserter_2i21c.png",
+    name = "5d-inserter-speed3-range2",
+    icon = "__5dim_automatization__/graphics/icon/icon_5d_inserter_3c32f.png",
     -- flags = {"goes-to-quickbar"},
     icon_size = 32,
-    subgroup = "inserters-left",
-    order = "f",
-    place_result = "5d-extreme-inserter-left-90d-close",
+    subgroup = "inserters-speed3",
+    order = "c",
+    place_result = "5d-inserter-speed3-range2",
     stack_size = 50
   },
 
 --Recipe
   {
     type = "recipe",
-    name = "5d-extreme-inserter-left-90d-close",
+    name = "5d-inserter-speed3-range2",
     enabled ="false",
-    ingredients = 
+    ingredients =
     {
-      {"5d-extreme-inserter-left-90d", 1},
-      {"iron-gear-wheel", 10}
+      {"iron-gear-wheel", 10},
+      {"iron-plate", 10},
+      {"5d-inserter-speed3-range1", 1}
     },
-    result = "5d-extreme-inserter-left-90d-close"
+    result = "5d-inserter-speed3-range2"
   },
 
 --Entity
-{
+   {
     type = "inserter",
-    name = "5d-extreme-inserter-left-90d-close",
-    icon = "__5dim_automatization__/graphics/icon/icon_5d_inserter_2i21f.png",
+    name = "5d-inserter-speed3-range2",
+    icon = "__base__/graphics/icons/fast-inserter.png",
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     icon_size = 32,
+    rotation_speed = 0.070,
+    extension_speed = 0.035,
+    pickup_position = {0, -2},
+    insert_position = {0, 2.2},
+    hand_size = 2.5,
     minable =
     {
       hardness = 0.2,
       mining_time = 0.5,
-      result = "5d-extreme-inserter-left-90d-close"
+      result = "5d-inserter-speed3-range2"
     },
-    rotation_speed = 0.070,
-    extension_speed = 0.035,
     max_health = 40,
     corpse = "small-remnants",
     resistances =
@@ -51,8 +55,6 @@ data:extend({
     },
     collision_box = {{-0.15, -0.15}, {0.15, 0.15}},
     selection_box = {{-0.4, -0.35}, {0.4, 0.45}},
-    pickup_position = {1, 0},
-    insert_position = {0, 0.8},
     energy_per_movement = "5KJ",
     energy_per_rotation = "5KJ",
     energy_source =
@@ -61,7 +63,6 @@ data:extend({
       usage_priority = "secondary-input",
       drain = "0.4kW"
     },
-    extension_speed = 0.07,
     fast_replaceable_group = "inserter",
     working_sound =
     {
@@ -180,8 +181,6 @@ data:extend({
         scale = 0.25
       }
     },
-    pickup_position = {0, -1},
-    insert_position = {0, 1.2},
     platform_picture =
     {
       sheet =

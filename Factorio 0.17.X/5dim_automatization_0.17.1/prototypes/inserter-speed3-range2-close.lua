@@ -2,47 +2,47 @@ data:extend({
 -- Item
   {
     type = "item",
-    name = "5d-inserter-speed3-range3-close",
-    icon = "__5dim_automatization__/graphics/icon/icon_5d_inserter_3c33c.png",
+    name = "5d-inserter-speed3-range2-close",
+    icon = "__5dim_automatization__/graphics/icon/icon_5d_inserter_3c32c.png",
     -- flags = {"goes-to-quickbar"},
     icon_size = 32,
     subgroup = "inserters-speed3",
-    order = "f",
-    place_result = "5d-inserter-speed3-range3-close",
+    order = "d",
+    place_result = "5d-inserter-speed3-range2-close",
     stack_size = 50
   },
 
 --Recipe
   {
     type = "recipe",
-    name = "5d-inserter-speed3-range3-close",
+    name = "5d-inserter-speed3-range2-close",
     enabled ="false",
     ingredients =
-    {
-      {"5d-inserter-speed3-range3", 1},
+	{
+      {"5d-inserter-speed3-range2", 1},
       {"electronic-circuit", 5},
       {"iron-gear-wheel", 5},
     },
-    result = "5d-inserter-speed3-range3-close"
+    result = "5d-inserter-speed3-range2-close"
   },
 
 --Entity
    {
     type = "inserter",
-    name = "5d-inserter-speed3-range3-close",
+    name = "5d-inserter-speed3-range2-close",
     icon = "__base__/graphics/icons/fast-inserter.png",
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     icon_size = 32,
     rotation_speed = 0.070,
     extension_speed = 0.035,
-    pickup_position = {0, -3},
-    insert_position = {0, 2.8},
-    hand_size = 3.5,
+    pickup_position = {0, -2},
+    insert_position = {0, 1.8},
+    hand_size = 2.5,
     minable =
     {
       hardness = 0.2,
       mining_time = 0.5,
-      result = "5d-inserter-speed3-range3-close"
+      result = "5d-inserter-speed3-range2-close"
     },
     max_health = 40,
     corpse = "small-remnants",
@@ -181,8 +181,6 @@ data:extend({
         scale = 0.25
       }
     },
-    pickup_position = {0, -1},
-    insert_position = {0, 1.2},
     platform_picture =
     {
       sheet =

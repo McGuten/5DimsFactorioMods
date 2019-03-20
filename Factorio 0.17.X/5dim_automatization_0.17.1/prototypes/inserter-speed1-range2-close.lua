@@ -2,52 +2,46 @@ data:extend({
 -- Item
   {
     type = "item",
-    name = "5d-inserter-speed1-range3",
-    icon = "__5dim_automatization__/graphics/icon/icon_5d_inserter_1c13f.png",
+    name = "5d-inserter-speed1-range2-close",
+    icon = "__5dim_automatization__/graphics/icon/icon_5d_inserter_1c12c.png",
     -- flags = {"goes-to-quickbar"},
     icon_size = 32,
     subgroup = "inserters-speed1",
-    order = "e",
-    place_result = "5d-inserter-speed1-range3",
+    order = "d",
+    place_result = "5d-inserter-speed1-range2-close",
     stack_size = 50
   },
 
 --Recipe
   {
     type = "recipe",
-    name = "5d-inserter-speed1-range3",
+    name = "5d-inserter-speed1-range2-close",
     enabled ="false",
     ingredients =
     {
-      {"electronic-circuit", 20},
-      {"iron-gear-wheel", 20},
-      {"iron-plate", 1}
+      {"long-handed-inserter", 1},
+      {"electronic-circuit", 5},
+      {"iron-gear-wheel", 5},
     },
-    result = "5d-inserter-speed1-range3"
+    result = "5d-inserter-speed1-range2-close"
   },
 
 --Entity
-   {
+  {
     type = "inserter",
-    name = "5d-inserter-speed1-range3",
-    icon = "__base__/graphics/icons/fast-inserter.png",
+    name = "5d-inserter-speed1-range2-close",
+    icon = "__base__/graphics/icons/long-handed-inserter.png",
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
+    minable = {hardness = 0.2, mining_time = 0.5, result = "5d-inserter-speed1-range2-close"},
     icon_size = 32,
     rotation_speed = 0.014,
     extension_speed = 0.035,
-    pickup_position = {0, -3},
-    insert_position = {0, 3.2},
-    hand_size = 3.5,
+    pickup_position = {0, -2},
+    insert_position = {0, 1.8},
     hand_size = 2.5,
-    minable =
-    {
-      hardness = 0.2,
-      mining_time = 0.5,
-      result = "5d-inserter-speed1-range3"
-    },
     max_health = 40,
     corpse = "small-remnants",
-    resistances =
+    resistances = 
     {
       {
         type = "fire",
@@ -64,6 +58,7 @@ data:extend({
       usage_priority = "secondary-input",
       drain = "0.4kW"
     },
+    extension_speed = 0.04,
     fast_replaceable_group = "inserter",
     working_sound =
     {
@@ -71,23 +66,23 @@ data:extend({
       sound =
       {
         {
-          filename = "__base__/sound/inserter-fast-1.ogg",
+          filename = "__base__/sound/inserter-long-handed-1.ogg",
           volume = 0.75
         },
         {
-          filename = "__base__/sound/inserter-fast-2.ogg",
+          filename = "__base__/sound/inserter-long-handed-2.ogg",
           volume = 0.75
         },
         {
-          filename = "__base__/sound/inserter-fast-3.ogg",
+          filename = "__base__/sound/inserter-long-handed-3.ogg",
           volume = 0.75
         },
         {
-          filename = "__base__/sound/inserter-fast-4.ogg",
+          filename = "__base__/sound/inserter-long-handed-4.ogg",
           volume = 0.75
         },
         {
-          filename = "__base__/sound/inserter-fast-5.ogg",
+          filename = "__base__/sound/inserter-long-handed-5.ogg",
           volume = 0.75
         }
       }
@@ -182,8 +177,8 @@ data:extend({
         scale = 0.25
       }
     },
-    pickup_position = {0, -1},
-    insert_position = {0, 1.2},
+    pickup_position = {0, -2},
+    insert_position = {0, 1.8},
     platform_picture =
     {
       sheet =
