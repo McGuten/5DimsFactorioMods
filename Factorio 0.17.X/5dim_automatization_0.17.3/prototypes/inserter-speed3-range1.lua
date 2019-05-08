@@ -2,47 +2,46 @@ data:extend({
 -- Item
   {
     type = "item",
-    name = "5d-inserter-speed3-range3",
-    icon = "__5dim_automatization__/graphics/icon/icon_5d_inserter_3c33f.png",
+    name = "5d-inserter-speed3-range1",
+    icon = "__5dim_automatization__/graphics/icon/icon_5d_inserter_3c31f.png",
     -- flags = {"goes-to-quickbar"},
     icon_size = 32,
     subgroup = "inserters-speed3",
-    order = "e",
-    place_result = "5d-inserter-speed3-range3",
+    order = "a",
+    place_result = "5d-inserter-speed3-range1",
     stack_size = 50
   },
 
 --Recipe
   {
     type = "recipe",
-    name = "5d-inserter-speed3-range3",
+    name = "5d-inserter-speed3-range1",
     enabled ="false",
     ingredients =
     {
-      {"iron-gear-wheel", 20},
-      {"iron-plate", 20},
-      {"5d-inserter-speed3-range1", 1}
+      {"electronic-circuit", 5},
+      {"fast-inserter", 1}
     },
-    result = "5d-inserter-speed3-range3"
+    result = "5d-inserter-speed3-range1"
   },
 
 --Entity
    {
     type = "inserter",
-    name = "5d-inserter-speed3-range3",
-    icon = "__base__/graphics/icons/fast-inserter.png",
+    name = "5d-inserter-speed3-range1",
+    icon = "__5dim_automatization__/graphics/icon/icon_5d_inserter_3c31f.png",
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     icon_size = 32,
     rotation_speed = 0.070,
     extension_speed = 0.035,
-    pickup_position = {0, -3},
-    insert_position = {0, 3.2},
-    hand_size = 3.5,
+    pickup_position = {0, -1},
+    insert_position = {0, 1.2},
+    hand_size = 1.5,
     minable =
     {
       hardness = 0.2,
       mining_time = 0.5,
-      result = "5d-inserter-speed3-range3"
+      result = "5d-inserter-speed3-range1"
     },
     max_health = 40,
     corpse = "small-remnants",
@@ -63,6 +62,7 @@ data:extend({
       usage_priority = "secondary-input",
       drain = "0.4kW"
     },
+    extension_speed = 0.07,
     fast_replaceable_group = "inserter",
     working_sound =
     {
@@ -181,6 +181,8 @@ data:extend({
         scale = 0.25
       }
     },
+    pickup_position = {0, -1},
+    insert_position = {0, 1.2},
     platform_picture =
     {
       sheet =
@@ -201,7 +203,6 @@ data:extend({
         }
       }
     },
-    rotation_speed = 0.01,
     circuit_wire_connection_points = circuit_connector_definitions["inserter"].points,
     circuit_connector_sprites = circuit_connector_definitions["inserter"].sprites,
     circuit_wire_max_distance = inserter_circuit_wire_max_distance,
