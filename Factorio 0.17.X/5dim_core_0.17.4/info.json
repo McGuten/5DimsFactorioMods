@@ -1,6 +1,6 @@
 {
   "name": "5dim_core",
-  "version": "0.17.3",
+  "version": "0.17.4",
   "factorio_version": "0.17",
   "title": "5Dim's mod - Core",
   "author": "5Dim",
@@ -8,6 +8,6 @@
   "homepage": "https://mods.factorio.com/mods",
   "description": "Core and settings of 5dim's mod",
   "dependencies": [
-    "base >= 0.17.23"
+    "base >= 0.17.34"
   ]
 }

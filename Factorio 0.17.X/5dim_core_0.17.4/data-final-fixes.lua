@@ -43,40 +43,40 @@ end
 --Player changes
 --Inventory size
 if settings.startup["5d-change-inventory"] then
-   data.raw["player"]["player"].inventory_size = settings.startup["5d-change-inventory"].value
+   data.raw.character["character"].inventory_size = settings.startup["5d-change-inventory"].value
 end
 
 --Reach distance
 if settings.startup["5d-long-reach"] then
-   data.raw["player"]["player"].build_distance = settings.startup["5d-long-reach"].value
-   data.raw["player"]["player"].reach_distance = settings.startup["5d-long-reach"].value
+   data.raw.character["character"].build_distance = settings.startup["5d-long-reach"].value
+   data.raw.character["character"].reach_distance = settings.startup["5d-long-reach"].value
 end
 
 --Light
 if settings.startup["5d-light-radius"] then
-   data.raw["player"]["player"].light = {
+   data.raw.character["character"].light = {
       {minimum_darkness = 0.3, intensity = 0.9, size = settings.startup["5d-light-radius"].value}
    }
 end
 
 --Health
 if settings.startup["5d-hp"] then
-   data.raw["player"]["player"].health = settings.startup["5d-hp"].value
+   data.raw.character["character"].health = settings.startup["5d-hp"].value
 end
 
 --Healing per tick
 if settings.startup["5d-healing"] then
-   data.raw["player"]["player"].healing_per_tick = settings.startup["5d-healing"].value
+   data.raw.character["character"].healing_per_tick = settings.startup["5d-healing"].value
 end
 
 --Mining speed
 if settings.startup["5d-mining-speed"] then
-   data.raw["player"]["player"].mining_speed = data.raw["player"]["player"].mining_speed * settings.startup["5d-mining-speed"].value
+   data.raw.character["character"].mining_speed = data.raw.character["character"].mining_speed * settings.startup["5d-mining-speed"].value
 end
 
 --Mining range
 if settings.startup["5d-long-mine"] then
-   data.raw["player"]["player"].reach_resource_distance = settings.startup["5d-long-mine"].value
+   data.raw.character["character"].reach_resource_distance = settings.startup["5d-long-mine"].value
 end
 
 -- Harded game
