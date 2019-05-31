@@ -294,7 +294,7 @@ local function insertCarAmmo(entity, player, invAmmo)
 			end
 			if not skip then
 				if not fromInv then
-					fromInv = player.get_inventory(defines.inventory.player_main)
+					fromInv = player.get_inventory(defines.inventory.character_main)
 					if not fromInv or not fromInv.valid or fromInv.is_empty() then return end
 				end
 				local count = fromInv.get_item_count(ammoItemName)
@@ -375,7 +375,7 @@ local function insertTurretAmmo(entity, player, invAmmo)
 			end
 			if not skip then
 				if not fromInv then
-					fromInv = player.get_inventory(defines.inventory.player_main)
+					fromInv = player.get_inventory(defines.inventory.character_main)
 					if not fromInv or not fromInv.valid or fromInv.is_empty() then return end
 				end
 				local count = fromInv.get_item_count(ammoItemName)
@@ -448,7 +448,7 @@ do
 		end
 	end
 	insertFuel = function(entity, player, invFuel)
-		local fromInv = player.get_inventory(defines.inventory.player_main)
+		local fromInv = player.get_inventory(defines.inventory.character_main)
 		if not fromInv or not fromInv.valid or fromInv.is_empty() then return end
 
 		if not sortedFuels then buildFuelTable() end
