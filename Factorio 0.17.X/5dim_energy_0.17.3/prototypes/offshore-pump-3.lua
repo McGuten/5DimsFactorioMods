@@ -3,19 +3,19 @@ data:extend(
         -- Item
         {
             type = "item",
-            name = "5d-offshore-pump",
-            icon = "__5dim_energy__/graphics/icon/icon_5d_offshore-pump_2_.png",
+            name = "5d-offshore-pump-2",
+            icon = "__5dim_energy__/graphics/icon/icon_5d_offshore-pump_3_.png",
             -- flags = {"goes-to-quickbar"},
             icon_size = 32,
             subgroup = "energy-offshore-pump",
-            order = "b",
-            place_result = "5d-offshore-pump",
+            order = "c",
+            place_result = "5d-offshore-pump-2",
             stack_size = 20
         },
         --Recipe
         {
             type = "recipe",
-            name = "5d-offshore-pump",
+            name = "5d-offshore-pump-2",
             enabled = "false",
             ingredients = {
                 {"iron-plate", 20},
@@ -23,22 +23,22 @@ data:extend(
                 {"steel-plate", 20},
                 {"electronic-circuit", 5},
                 {"pipe", 10},
-                {"offshore-pump", 1},
+                {"5d-offshore-pump", 1},
                 {"iron-gear-wheel", 5}
             },
-            result = "5d-offshore-pump"
+            result = "5d-offshore-pump-2"
         },
         --Entity
         {
             type = "offshore-pump",
-            name = "5d-offshore-pump",
-            icon = "__5dim_energy__/graphics/icon/icon_5d_offshore-pump_2_.png",
+            name = "5d-offshore-pump-2",
+            icon = "__5dim_energy__/graphics/icon/icon_5d_offshore-pump_3_.png",
             icon_size = 32,
             flags = {"placeable-neutral", "player-creation", "filter-directions"},
             collision_mask = {"ground-tile", "object-layer"},
             fluid_box_tile_collision_test = {"ground-tile"},
             adjacent_tile_collision_test = {"water-tile"},
-            minable = {mining_time = 1, result = "5d-offshore-pump"},
+            minable = {mining_time = 1, result = "5d-offshore-pump-2"},
             --default offshore pump max_health is 150 now, it was set @ 80.
             max_health = 150,
             corpse = "small-remnants",
@@ -58,7 +58,7 @@ data:extend(
             collision_box = {{-0.6, -1.05}, {0.6, 0.3}},
             selection_box = {{-1, -1.49}, {1, 0.49}},
             fluid_box = {
-                base_area = 1,
+                base_area = 3,
                 base_level = 1,
                 pipe_covers = pipecoverspictures(),
                 production_type = "output",
@@ -69,21 +69,21 @@ data:extend(
                     }
                 }
             },
-            --pumping speed change vanila pump is 20, this one is 60
-            pumping_speed = 40,
+            --pumping speed change vanila pump is 20, this one is 100
+            pumping_speed = 60,
             tile_width = 1,
             tile_height = 1,
             vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
             picture = {
                 north = {
-                    filename = "__5dim_energy__/graphics/icon/icon_5d_offshore-pump_2.png",
+                    filename = "__5dim_energy__/graphics/icon/icon_5d_offshore-pump_3.png",
                     priority = "high",
                     shift = {0.90625, 0.0625},
                     width = 160,
                     height = 102
                 },
                 east = {
-                    filename = "__5dim_energy__/graphics/icon/icon_5d_offshore-pump_2.png",
+                    filename = "__5dim_energy__/graphics/icon/icon_5d_offshore-pump_3.png",
                     priority = "high",
                     shift = {0.90625, 0.0625},
                     x = 160,
@@ -91,19 +91,21 @@ data:extend(
                     height = 102
                 },
                 south = {
-                    filename = "__5dim_energy__/graphics/icon/icon_5d_offshore-pump_2.png",
+                    filename = "__5dim_energy__/graphics/icon/icon_5d_offshore-pump_3.png",
                     priority = "high",
-                    shift = {0.90625, 0.65625},
+                    ---adjusted to fix detail spill from west image
+                    shift = {0.75, 0.65625},
                     x = 320,
-                    width = 160,
+                    width = 150,
                     height = 102
                 },
                 west = {
-                    filename = "__5dim_energy__/graphics/icon/icon_5d_offshore-pump_2.png",
+                    filename = "__5dim_energy__/graphics/icon/icon_5d_offshore-pump_3.png",
                     priority = "high",
-                    shift = {1.0, 0.0625},
-                    x = 480,
-                    width = 160,
+                    ---adjusted to fix detail clipping
+                    shift = {0.78125, 0.0625},
+                    x = 470,
+                    width = 170,
                     height = 102
                 }
             },
