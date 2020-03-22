@@ -1,13 +1,11 @@
 {
-   "name": "5dim_vehicle",
-   "version": "0.18.0",
-   "factorio_version": "0.18.0",
-   "title": "5Dim's mod - Vehicle",
-   "author": "5Dim",
-   "contact": "mcguten.videos@gmail.com",
-   "homepage": "https://mods.factorio.com/mods",
-   "description": "Vehicles for 5dim's mod",
-   "dependencies": [
-      "5dim_core >= 0.18.0"
-   ]
+    "name": "5dim_vehicle",
+    "version": "0.18.0",
+    "factorio_version": "0.18",
+    "title": "5Dim's mod - Vehicle",
+    "author": "5Dim",
+    "contact": "mcguten.videos@gmail.com",
+    "homepage": "https://mods.factorio.com/mods",
+    "description": "Vehicles for 5dim's mod",
+    "dependencies": ["5dim_core >= 0.18.0"]
 }
