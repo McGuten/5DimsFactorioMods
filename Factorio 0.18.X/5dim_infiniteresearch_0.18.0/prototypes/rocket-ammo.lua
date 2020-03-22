@@ -1,0 +1,33 @@
+-- data:extend({
+--   {
+--     type = "technology",
+--     name = "rocket-speed-8",
+--     icon = "__base__/graphics/technology/rocket-speed.png",
+--     icon_size = 128, 
+--     effects =
+--     {
+--       {
+--         type = "gun-speed",
+--         ammo_category = "rocket",
+--         modifier = 1
+--       }
+--     },
+--     prerequisites = {"rocket-speed-7"},
+--     unit =
+--     {
+--       count_formula = "150*(L-4)",
+--       ingredients =
+--       {
+--         {"military-science-pack", 1},
+--         {"automation-science-pack", 1},
+--         {"logistic-science-pack", 1},
+--         {"chemical-science-pack", 1},
+--         {"utility-science-pack", 1}
+--       },
+--       time = 60
+--     },
+--     max_level = "infinite",
+--     upgrade = true,
+--     order = "e-j-n"
+--   },
+-- })
