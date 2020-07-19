@@ -406,7 +406,7 @@ data:extend({
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     open_sound =
     {
-      variations = { filename = "__base__/sound/gate1.ogg", volume = 0.5 },
+      variations = { filename = "__base__/sound/gate-open-1.ogg", volume = 0.5 },
       aggregation =
       {
         max_count = 1,
@@ -415,7 +415,7 @@ data:extend({
     },
     close_sound =
     {
-      variations = { filename = "__base__/sound/gate1.ogg", volume = 0.5 },
+      variations = { filename = "__base__/sound/gate-close-1.ogg", volume = 0.5 },
       aggregation =
       {
         max_count = 1,
