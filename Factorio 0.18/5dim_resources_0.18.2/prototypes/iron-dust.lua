@@ -15,7 +15,7 @@ data:extend(
             type = "recipe",
             name = "5d-iron-plate",
             icon = "__base__/graphics/icons/iron-plate.png",
-            icon_size = 32,
+            icon_size = 64,
             subgroup = "plates-plates2",
             order = "a",
             category = "smelting",

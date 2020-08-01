@@ -4,7 +4,7 @@ data:extend({
     type = "item-with-entity-data",
     name = "5d-tank",
     icon = "__base__/graphics/icons/tank.png",
-    icon_size = 32,
+    icon_size = 64,
     subgroup = "vehicles-tank",
     order = "b",
     place_result = "5d-tank",
