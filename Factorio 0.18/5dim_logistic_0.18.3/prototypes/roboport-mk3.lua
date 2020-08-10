@@ -28,9 +28,9 @@ recipe.icon_size = 32
 recipe.ingredients = {
     {"5d-roboport-2", 1},
     {"steel-plate", 20},
-    {"iron-gear-wheel", 20},
-    {"advanced-circuit", 20},
-    {"processing-unit", 20}
+    -- {"iron-gear-wheel", 20},
+    -- {"advanced-circuit", 20},
+    {"processing-unit", 5}
 }
 
 --Entity

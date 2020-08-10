@@ -22,7 +22,7 @@ data:extend({
     {
       {"5d-mining-drill-speed-2", 1},
       {"steel-plate", 15},
-      {"processing-unit", 10},
+      {"processing-unit", 2},
     },
     result = "5d-mining-drill-speed-3"
   },

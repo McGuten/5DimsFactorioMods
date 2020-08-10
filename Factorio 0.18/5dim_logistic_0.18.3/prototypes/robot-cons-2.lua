@@ -20,7 +20,7 @@ data:extend(
             enabled = "false",
             ingredients = {
                 {"5d-construction-robot-2", 1},
-                {"electronic-circuit", 5}
+                {"electronic-circuit", 2}
             },
             result = "5d-construction-robot-3"
         },
