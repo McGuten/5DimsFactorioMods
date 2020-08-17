@@ -1,0 +1,24 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.16.4
+Date: 06/01/2018
+  News:
+    - Added changelog.txt.
+---------------------------------------------------------------------------------------------------
+Version: 0.16.5
+Date: 27/01/2018
+  News:
+    - Added missing vehicle-impact sounds.
+    - Updated logistic chest circuit wire connections to the new vanilla's newer standard.
+    - Updated roboport roboport visualization properties to match vanilla's newer standard.
+    - Removed repair-pack info from building bots (obsolete).
+---------------------------------------------------------------------------------------------------
+Version: 0.16.6
+Date: 22/02/2018
+  News:
+    - Remake roboports.
+    - Added description.
+---------------------------------------------------------------------------------------------------
+Version: 0.16.7
+Date: 24/02/2018
+  News:
+    - remake recipes for roboports.
